@@ -1,34 +1,22 @@
 /* ==========================================================================
+   Base
+========================================================================== */
+
+@import url("./base/reset.css");
+@import url("./base/fonts.css");
+@import url("./base/variables.css");
+@import url("./base/layout.css");
+@import url("./base/animations.css");
+
+
+/* ==========================================================================
    Sections
 ========================================================================== */
 
+@import url("./sections/navbar.css");
 @import url("./sections/hero.css");
-
-
-/* ==========================================================================
-   Global Layout
-========================================================================== */
-
-.container {
-    width: min(var(--container-width), 100%);
-    margin-inline: auto;
-    padding-inline: var(--container-padding);
-}
-
-
-/* ==========================================================================
-   Global Elements
-========================================================================== */
-
-body {
-    min-height: 100vh;
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-}
-
-section {
-    width: 100%;
-}
+@import url("./sections/about.css");
+@import url("./sections/projects.css");
+@import url("./sections/skills.css");
+@import url("./sections/contact.css");
+@import url("./sections/footer.css");
