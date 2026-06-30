@@ -1,0 +1,25 @@
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 4rem;
+}
+
+.hero__info,
+.hero__visual {
+    min-width: 0;
+}
+
+@media (max-width: 992px) {
+
+    .hero__content {
+        grid-template-columns: 1fr;
+    }
+
+}

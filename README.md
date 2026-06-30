@@ -58,7 +58,9 @@ GHenaoLab
 │   │   ├── style.css
 │   │   ├── variables.css
 │   │   ├── reset.css
-│   │   └── animations.css
+│   │   ├── animations.css
+│   │   └── sections/
+│   │       └── hero.css
 │   │
 │   ├── js/
 │   │   ├── main.js
@@ -70,22 +72,6 @@ GHenaoLab
 │       ├── images/
 │       ├── icons/
 │       └── fonts/
-│
-├── spec/
-│   ├── constitution/
-│   │   ├── mission.md      ← qué construimos y para quién
-│   │   ├── tech-stack.md   ← tecnologías y convenciones
-│   │   └── roadmap.md      ← orden de las features
-│   │
-│   └── features/
-│       ├── 001-hero/
-│       │   ├── spec.md     ← qué hace esta feature y criterios de aceptación
-│       │   ├── plan.md     ← cómo se implementa
-│       │   └── tasks.md    ← checklist de tareas
-│       │
-│       └── ...
-│
-├── AGENTS.md
 │
 └── README.md
 
