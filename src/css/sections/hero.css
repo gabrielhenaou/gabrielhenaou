@@ -48,6 +48,14 @@
     line-height: var(--line-height-relaxed);
 }
 
+.hero__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+
+    margin-top: var(--spacing-md);
+}
+
 @media (max-width: 992px) {
 
     .hero__content {
