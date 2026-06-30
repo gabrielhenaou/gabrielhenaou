@@ -1,0 +1,14 @@
+body {
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-family: Arial, sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    width: 100%;
+}
