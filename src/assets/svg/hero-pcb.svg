@@ -3,13 +3,12 @@
     viewBox="0 0 1000 1000"
     xmlns="http://www.w3.org/2000/svg">
 
-    <!-- ===================================================== -->
-    <!-- Controller -->
-    <!-- ===================================================== -->
+    <defs>
+
+    </defs>
 
     <g class="controller">
-
-        <!-- Body -->
+        <!-- Controller body -->
 
         <rect
             class="controller__body"
@@ -19,57 +18,549 @@
             height="200"
             rx="10"/>
 
-        <!-- Pin 1 -->
+        <!-- Pin 1 marker -->
 
         <circle
             class="controller__pin-marker"
             cx="425"
             cy="425"
             r="5"/>
+    </g>
 
-        <!-- ===================================================== -->
-        <!-- PIN -->
-        <!-- ===================================================== -->
+    <g class="pins">
 
-        <!-- ================= TOP ================= -->
+    </g>
 
-        <rect class="controller__pin" x="415" y="385" width="10" height="15"/>
-        <rect class="controller__pin" x="440" y="385" width="10" height="15"/>
-        <rect class="controller__pin" x="465" y="385" width="10" height="15"/>
-        <rect class="controller__pin" x="490" y="385" width="10" height="15"/>
-        <rect class="controller__pin" x="515" y="385" width="10" height="15"/>
-        <rect class="controller__pin" x="540" y="385" width="10" height="15"/>
-        <rect class="controller__pin" x="565" y="385" width="10" height="15"/>
+    <g class="fanout">
 
-        <!-- ================= RIGHT ================= -->
+        <!-- ================================================= -->
+        <!-- TOP -->
+        <!-- ================================================= -->
 
-        <rect class="controller__pin" x="600" y="415" width="15" height="10"/>
-        <rect class="controller__pin" x="600" y="440" width="15" height="10"/>
-        <rect class="controller__pin" x="600" y="465" width="15" height="10"/>
-        <rect class="controller__pin" x="600" y="490" width="15" height="10"/>
-        <rect class="controller__pin" x="600" y="515" width="15" height="10"/>
-        <rect class="controller__pin" x="600" y="540" width="15" height="10"/>
-        <rect class="controller__pin" x="600" y="565" width="15" height="10"/>
+        <path id="fanout-t1"
+            class="fanout__track"
+            d="M422 388 L422 350"/>
 
-        <!-- ================= BOTTOM ================= -->
+        <path id="fanout-t2"
+            class="fanout__track"
+            d="M447 388 L447 350"/>
 
-        <rect class="controller__pin" x="415" y="600" width="10" height="15"/>
-        <rect class="controller__pin" x="440" y="600" width="10" height="15"/>
-        <rect class="controller__pin" x="465" y="600" width="10" height="15"/>
-        <rect class="controller__pin" x="490" y="600" width="10" height="15"/>
-        <rect class="controller__pin" x="515" y="600" width="10" height="15"/>
-        <rect class="controller__pin" x="540" y="600" width="10" height="15"/>
-        <rect class="controller__pin" x="565" y="600" width="10" height="15"/>
+        <path id="fanout-t4"
+            class="fanout__track"
+            d="M497 388 L497 350"/>
 
-        <!-- ================= LEFT ================= -->
+        <path id="fanout-t6"
+            class="fanout__track"
+            d="M547 388 L547 350"/>
 
-        <rect class="controller__pin" x="385" y="415" width="15" height="10"/>
-        <rect class="controller__pin" x="385" y="440" width="15" height="10"/>
-        <rect class="controller__pin" x="385" y="465" width="15" height="10"/>
-        <rect class="controller__pin" x="385" y="490" width="15" height="10"/>
-        <rect class="controller__pin" x="385" y="515" width="15" height="10"/>
-        <rect class="controller__pin" x="385" y="540" width="15" height="10"/>
-        <rect class="controller__pin" x="385" y="565" width="15" height="10"/>
+        <path id="fanout-t7"
+            class="fanout__track"
+            d="M572 388 L572 350"/>
+
+        <!-- ================================================= -->
+        <!-- RIGHT -->
+        <!-- ================================================= -->
+
+        <path id="fanout-r1"
+            class="fanout__track"
+            d="M612 422 L650 422"/>
+
+        <path id="fanout-r2"
+            class="fanout__track"
+            d="M612 447 L650 447"/>
+
+        <path id="fanout-r3"
+            class="fanout__track"
+            d="M612 472 L650 472"/>
+
+        <path id="fanout-r5"
+            class="fanout__track"
+            d="M612 522 L650 522"/>
+
+        <path id="fanout-r6"
+            class="fanout__track"
+            d="M612 547 L650 547"/>
+
+        <path id="fanout-r7"
+            class="fanout__track"
+            d="M612 572 L650 572"/>
+
+        <!-- ================================================= -->
+        <!-- BOTTOM -->
+        <!-- ================================================= -->
+
+        <path id="fanout-b2"
+            class="fanout__track"
+            d="M447 612 L447 650"/>
+
+        <path id="fanout-b3"
+            class="fanout__track"
+            d="M472 612 L472 650"/>
+
+        <path id="fanout-b5"
+            class="fanout__track"
+            d="M522 612 L522 650"/>
+
+        <path id="fanout-b6"
+            class="fanout__track"
+            d="M547 612 L547 650"/>
+
+        <!-- ================================================= -->
+        <!-- LEFT -->
+        <!-- ================================================= -->
+
+        <path id="fanout-l1"
+            class="fanout__track"
+            d="M388 422 L350 422"/>
+
+        <path id="fanout-l2"
+            class="fanout__track"
+            d="M388 447 L350 447"/>
+
+        <path id="fanout-l4"
+            class="fanout__track"
+            d="M388 497 L350 497"/>
+
+        <path id="fanout-l6"
+            class="fanout__track"
+            d="M388 547 L350 547"/>
+
+        <path id="fanout-l7"
+            class="fanout__track"
+            d="M388 572 L350 572"/>
+
+    </g>
+
+    <g class="tracks">
+
+        <!-- ===================== T1 ===================== -->
+        <g id="track-t1" class="track">
+
+            <path
+                class="track__copper"
+                d="
+                    M422 358
+                    L422 300
+                    L388 266
+                    L320 266
+                    L250 196
+                "/>
+
+            <circle
+                class="track__terminal"
+                cx="250"
+                cy="196"
+                r="6"/>
+
+        </g>
+        <!-- ===================== T2 ===================== -->
+
+        <g id="track-t2" class="track">
+
+            <path
+                class="track__copper"
+                d="M447 350
+                L447 250
+                L360 163"/>
+
+            <circle
+                class="track__terminal"
+                cx="360"
+                cy="163"
+                r="6"/>
+        </g>
+
+        <!-- ===================== T4 ===================== -->
+
+        <g id="track-t4" class="track">
+
+            <path
+                class="track__copper"
+                d="
+                    M497 350
+                    L497 235
+                    L535 197
+                    L535 145
+                "/>
+
+            <circle
+                class="track__terminal"
+                cx="535"
+                cy="145"
+                r="6"/>
+
+        </g>
+
+        <!-- ===================== T6 ===================== -->
+
+        <g id="track-t6" class="track">
+
+            <path
+                class="track__copper"
+                d="
+                    M547 352
+                    L547 280
+                    L645 182
+                "/>
+
+            <circle
+                class="track__terminal"
+                cx="645"
+                cy="182"
+                r="6"/>
+        
+        </g>
+
+        <!-- ===================== T7 ===================== -->
+
+        <g id="track-t7" class="track">
+
+            <path
+                class="track__copper"
+                d="
+                    M572 360
+                    L572 305
+                    L640 237
+                "/>
+
+            <circle
+                class="track__terminal"
+                cx="640"
+                cy="237"
+                r="6"/>
+        
+        </g>
+
+        <!-- ===================== R1 ===================== -->
+
+        <g id="track-r1" class="track">
+
+            <path
+                class="track__copper"
+                d="
+                    M650 422
+                    L720 422
+                    L770 372
+                    L770 185
+                    L865 90
+                "/>
+
+            <circle
+                class="track__terminal"
+                cx="865"
+                cy="90"
+                r="6"/>
+        
+        </g>
+            
+        <!-- ===================== R2 ===================== -->
+
+        <g id="track-r2" class="track">
+
+            <path
+                class="track__copper"
+                d="
+                    M648 447
+                    L720 447
+                    L805 362
+                "/>
+
+            <circle
+                class="track__terminal"
+                cx="805"
+                cy="362"
+                r="6"/>
+        
+        </g>
+
+        <!-- ===================== R3 ===================== -->
+
+        <g id="track-r3" class="track">
+
+            <path
+                class="track__copper"
+                d="
+                    M650 472
+                    L745 472
+                    L790 517
+                    L790 655
+                    L885 750
+                "/>
+
+            <circle
+                class="track__terminal"
+                cx="885"
+                cy="750"
+                r="6"/>
+        
+        </g>
+
+        <!-- ===================== R5 ===================== -->
+
+        <g id="track-r5" class="track">
+
+            <path
+                class="track__copper"
+                d="
+                    M650 522
+                    L760 522
+                    L820 582
+                    L820 705
+                    L900 785
+                "/>
+
+            <circle
+                class="track__terminal"
+                cx="900"
+                cy="785"
+                r="6"/>
+        
+        </g>
+
+        <!-- ===================== R6 ===================== -->
+
+        <g id="track-r6" class="track">
+
+            <path
+                class="track__copper"
+                d="
+                    M650 547
+                    L730 547
+                    L770 507
+                    L770 315
+                    L840 245
+                "/>
+
+            <circle
+                class="track__terminal"
+                cx="840"
+                cy="245"
+                r="6"/>
+
+        </g>
+
+        <!-- ===================== R7 ===================== -->
+
+        <g id="track-r7" class="track">
+            <path
+                class="track__copper"
+                d="
+                    M650 572
+                    L715 572
+                    L755 612
+                    L755 840
+                    L675 920
+                "/>
+
+            <circle
+                class="track__terminal"
+                cx="675"
+                cy="920"
+                r="6"/>
+
+        </g>
+
+        <!-- ===================== B2 ===================== -->
+
+        <g id="track-b2" class="track">
+
+            <path
+                class="track__copper"
+                d="
+                    M447 650
+                    L447 730
+                    L365 812
+                "/>
+
+            <circle
+                class="track__terminal"
+                cx="365"
+                cy="812"
+                r="6"/>
+
+        </g>
+
+        <!-- ===================== B3 ===================== -->
+
+        <g id="track-b3" class="track">
+
+            <path
+                class="track__copper"
+                d="
+                    M472 650
+                    L472 735
+                    L390 817
+                "/>
+
+            <circle
+                class="track__terminal"
+                cx="390"
+                cy="817"
+                r="6"/>
+
+        </g>
+
+        <!-- ===================== B5 ===================== -->
+
+        <g id="track-b5" class="track">
+
+            <path
+                class="track__copper"
+                d="
+                    M522 650
+                    L522 735
+                    L605 818
+                "/>
+
+            <circle
+                class="track__terminal"
+                cx="605"
+                cy="818"
+                r="6"/>
+
+        </g>
+
+        <!-- ===================== B6 ===================== -->
+
+        <g id="track-b6" class="track">
+
+            <path
+                class="track__copper"
+                d="
+                    M547 650
+                    L547 730
+                    L590 773
+                    L590 865
+                    L670 945
+                "/>
+
+            <circle
+                class="track__terminal"
+                cx="670"
+                cy="945"
+                r="6"/>
+
+        </g>
+
+        <!-- ===================== L1 ===================== -->
+
+        <g id="track-l1" class="track">
+
+            <path
+                class="track__copper"
+                d="
+                    M350 422
+                    L275 422
+                    L220 367
+                    L220 180
+                    L125 85
+                "/>
+
+            <circle
+                class="track__terminal"
+                cx="125"
+                cy="85"
+                r="6"/>
+
+        </g>
+
+        <!-- ===================== L2 ===================== -->
+
+        <g id="track-l2" class="track">
+        
+            <path
+                class="track__copper"
+                d="
+                    M350 447
+                    L270 447
+                    L165 342
+                "/>
+
+            <circle
+                class="track__terminal"
+                cx="165"
+                cy="342"
+                r="6"/>
+
+        </g>
+
+        <!-- ===================== L4 ===================== -->
+
+        <g id="track-l4" class="track">
+
+            <path
+                class="track__copper"
+                d="
+                    M350 497
+                    L265 497
+                    L215 447
+                    L215 315
+                    L135 235
+                "/>
+
+            <circle
+                class="track__terminal"
+                cx="135"
+                cy="235"
+                r="6"/>
+
+        </g>
+
+        <!-- ===================== L6 ===================== -->
+
+        <g id="track-l6" class="track">
+
+            <path
+                class="track__copper"
+                d="
+                    M350 547
+                    L285 547
+                    L250 582
+                    L250 710
+                    L175 785
+                "/>
+
+            <circle
+                class="track__terminal"
+                cx="175"
+                cy="785"
+                r="6"/>
+
+        </g>
+
+        <!-- ===================== L7 ===================== -->
+
+        <g id="track-l7" class="track">
+
+            <path
+                class="track__copper"
+                d="
+                    M350 572
+                    L260 572
+                    L205 627
+                    L205 845
+                    L115 935
+                "/>
+
+            <circle
+                class="track__terminal"
+                cx="115"
+                cy="935"
+                r="6"/>
+
+        </g>
+
+    </g>
+
+    <g class="terminals">
+
+    </g>
+
+    <g class="pulses">
+
+    </g>
+
+    <g class="particles">
 
     </g>
 
