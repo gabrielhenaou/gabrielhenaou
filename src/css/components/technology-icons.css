@@ -1,0 +1,119 @@
+/* ==========================================================================
+   Technology Icons
+========================================================================== */
+
+.technology-icons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* ==========================================================================
+   Size Modifiers
+========================================================================== */
+
+.technology-icons--size-small {
+    gap: var(--spacing-xs);
+}
+
+.technology-icons--size-large {
+    gap: var(--spacing-sm);
+}
+
+/* ==========================================================================
+   Alignment Modifiers
+========================================================================== */
+
+.technology-icons--align-start {
+    justify-content: flex-start;
+}
+
+.technology-icons--align-center {
+    justify-content: center;
+}
+
+/* ==========================================================================
+   Technology Icon
+========================================================================== */
+
+.technology-icon {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.technology-icon__image {
+    display: block;
+
+    opacity: var(--opacity-muted);
+    cursor: pointer;
+
+    transition:
+        opacity var(--transition-fast),
+        transform var(--transition-fast);
+}
+
+/* ==========================================================================
+   Size
+========================================================================== */
+
+.technology-icons--size-small .technology-icon__image {
+    width: var(--icon-size-sm);
+    height: var(--icon-size-sm);
+}
+
+.technology-icons--size-large .technology-icon__image {
+    width: var(--icon-size-lg);
+    height: var(--icon-size-lg);
+}
+
+/* ==========================================================================
+   Tooltip
+========================================================================== */
+
+.technology-icon__tooltip {
+    position: absolute;
+
+    bottom: calc(100% + var(--spacing-xs));
+    left: 50%;
+
+    transform: translateX(-50%) translateY(4px);
+
+    padding: var(--spacing-xs);
+
+    border: var(--border-width-thin) solid var(--color-primary);
+    border-radius: var(--radius-sm);
+
+    background: var(--color-surface);
+    color: var(--color-text);
+
+    font-size: var(--font-size-xs);
+    white-space: nowrap;
+
+    opacity: 0;
+    visibility: hidden;
+
+    pointer-events: none;
+
+    transition:
+        opacity var(--transition-fast),
+        transform var(--transition-fast),
+        visibility var(--transition-fast);
+}
+
+/* ==========================================================================
+   States
+========================================================================== */
+
+.technology-icon:hover .technology-icon__image {
+    opacity: var(--opacity-visible);
+    transform: scale(var(--image-zoom));
+}
+
+.technology-icon:hover .technology-icon__tooltip {
+    opacity: var(--opacity-visible);
+    visibility: visible;
+
+    transform: translateX(-50%) translateY(0);
+}

@@ -1,0 +1,99 @@
+/* ==========================================================================
+   Project Card
+========================================================================== */
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+
+    background: var(--color-surface);
+
+    border: var(--border-width-thin) solid var(--color-border);
+    border-radius: var(--radius-md);
+
+    transition:
+        transform var(--transition-fast),
+        border-color var(--transition-fast),
+        box-shadow var(--transition-fast);
+}
+
+.project-card:hover {
+    transform: translateY(var(--hover-lift));
+    border-color: var(--color-primary);
+}
+
+/* ==========================================================================
+   Image
+========================================================================== */
+
+.project-card__image {
+    display: block;
+
+    width: 100%;
+    aspect-ratio: 1 / 1;
+
+    object-fit: cover;
+
+    transition: transform var(--transition-fast);
+}
+
+.project-card:hover .project-card__image {
+    transform: scale(var(--image-zoom));
+}
+
+/* ==========================================================================
+   Content
+========================================================================== */
+
+.project-card__content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+
+    padding: var(--spacing-md);
+}
+
+/* ==========================================================================
+   Typography
+========================================================================== */
+
+.project-card__title {
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-semibold);
+    line-height: var(--line-height-tight);
+}
+
+.project-card__description {
+    flex: 1;
+
+    max-height: 5rem;
+    overflow-y: auto;
+
+    color: var(--color-text-muted);
+
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-base);
+}
+
+/* ==========================================================================
+   Footer
+========================================================================== */
+
+.project-card__meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--spacing-sm);
+
+    margin-top: auto;
+}
+
+.project-card__year {
+    color: var(--color-text-muted);
+
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-medium);
+}
