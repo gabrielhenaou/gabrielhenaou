@@ -72,14 +72,41 @@ function initializeActiveLink() {
 
     );
 
-    sections.forEach((section) => {
-        observer.observe(section);
-    });
+    sections.forEach((section) => observer.observe(section));
+
+}
 
 /* ==========================================================================
    Navbar Scroll
 ========================================================================== */
 
 function initializeNavbarScroll() {
+
+    const header = document.querySelector(".header");
+
+    if (!header) {
+        return;
+    }
+
+    const SCROLL_THRESHOLD = 20;
+
+    let isScrolled = false;
+
+    window.addEventListener("scroll", () => {
+
+        const shouldScroll = window.scrollY > SCROLL_THRESHOLD;
+
+        if (shouldScroll === isScrolled) {
+            return;
+        }
+
+        isScrolled = shouldScroll;
+
+        header.classList.toggle(
+            "is-scrolled",
+            isScrolled
+        );
+
+    });
 
 }

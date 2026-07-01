@@ -87,3 +87,20 @@
 .is-active {
     color: var(--color-primary);
 }
+
+/* ==========================================================================
+   Scroll State
+========================================================================== */
+
+.header.is-scrolled {
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
+}
+
+.header.is-scrolled .navbar {
+
+    background-color: rgba(13, 17, 23, 0.88);
+    backdrop-filter: blur(16px);
+
+}
