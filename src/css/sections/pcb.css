@@ -21,3 +21,30 @@
 .controller__pin-marker {
     fill: var(--color-primary);
 }
+
+/* ==========================================================
+   Fanout
+========================================================== */
+
+.fanout__track {
+    fill: none;
+    stroke: #8A9099;
+    stroke-width: 4;
+    stroke-linecap: round;
+}
+
+/* ==========================================================
+   Tracks
+========================================================== */
+
+.track__copper {
+    fill: none;
+    stroke: var(--color-primary);
+    stroke-width: 4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.track__terminal {
+    fill: var(--color-primary);
+}
