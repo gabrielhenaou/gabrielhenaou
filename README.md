@@ -87,3 +87,14 @@ GHenaoLab
 - `style(alcance):` ...
 - `refactor(alcance):` ...
 - `chore(alcance):` ...
+
+ada componente tiene una única responsabilidad y cada sección organiza componentes, no los redefine.
+
+# css:
+1. Estructura externa
+2. Layout
+3. Imagen
+4. Contenido
+5. Footer
+6. Estados (hover)
+7. Responsive

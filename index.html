@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>GHenaoLab | Embedded Systems Engineer</title>
 
@@ -13,14 +13,15 @@
 
 <body>
 
+    <!-- ==========================================================================
+        HEADER
+    =========================================================================== -->
+
     <header class="header">
 
         <nav class="navbar container">
 
-            <a
-                href="#hero"
-                class="navbar__brand"
-                data-section="hero">
+            <a class="navbar__brand" href="#hero" data-section="hero">
 
                 GHenaoLab
 
@@ -30,10 +31,7 @@
 
                 <li class="navbar__item">
 
-                    <a
-                        href="#about"
-                        class="navbar__link"
-                        data-section="about">
+                    <a class="navbar__link" href="#about" data-section="about">
 
                         About
 
@@ -43,10 +41,7 @@
 
                 <li class="navbar__item">
 
-                    <a
-                        href="#projects"
-                        class="navbar__link"
-                        data-section="projects">
+                    <a class="navbar__link" href="#projects" data-section="projects">
 
                         Projects
 
@@ -56,10 +51,7 @@
 
                 <li class="navbar__item">
 
-                    <a
-                        href="#skills"
-                        class="navbar__link"
-                        data-section="skills">
+                    <a class="navbar__link" href="#skills" data-section="skills">
 
                         Skills
 
@@ -69,10 +61,7 @@
 
                 <li class="navbar__item">
 
-                    <a
-                        href="#contact"
-                        class="navbar__link"
-                        data-section="contact">
+                    <a class="navbar__link" href="#contact" data-section="contact">
 
                         Contact
 
@@ -86,9 +75,17 @@
 
     </header>
 
+    <!-- ==========================================================================
+        MAIN
+    =========================================================================== -->
+
     <main>
 
-        <section id="hero" class="hero">
+        <!-- ==========================================================
+            HERO
+        =========================================================== -->
+
+        <section class="hero" id="hero">
 
             <div class="container">
 
@@ -98,37 +95,45 @@
 
                         <p class="hero__greeting">
                             Hello, soy
+
                         </p>
 
                         <h1 class="hero__title">
                             Gabriel Henao
+
                         </h1>
 
                         <p class="hero__role">
                             Embedded Systems Engineer
+
                         </p>
 
                         <p class="hero__description">
-                            Diseño sistemas embebidos, firmware, hardware electrónico y experiencias interactivas, creando soluciones fiables con una mentalidad de ingeniería centrada en la calidad, la mantenibilidad y una arquitectura robusta.
+                            Diseño sistemas embebidos, firmware, hardware electrónico y experiencias interactivas,
+                            creando soluciones fiables con una mentalidad de ingeniería centrada en la calidad, la
+                            mantenibilidad y una arquitectura robusta.
+
                         </p>
 
                         <div class="hero__actions">
 
-                            <a href="#projects" class="button button--primary">
+                            <a class="button button--primary" href="#projects">
+
                                 View Projects
+
                             </a>
 
-                            <a href="#contact" class="button button--secondary">
+                            <a class="button button--secondary" href="#contact">
+
                                 Contact Me
+
                             </a>
 
                         </div>
 
                     </div>
 
-                    <div 
-                        id="hero-visual"
-                        class="hero__visual">
+                    <div class="hero__visual" id="hero-visual">
 
                     </div>
 
@@ -138,25 +143,208 @@
 
         </section>
 
-        <section id="about">
+        <!-- ==========================================================
+            ABOUT
+        =========================================================== -->
+
+        <section class="about" id="about">
+
+            <div class="container">
+
+                <header class="section-header">
+
+                    <span class="section-header__label">
+                        About
+
+                    </span>
+
+                    <h2 class="section-header__title">
+                        Engineering solutions with purpose.
+
+                    </h2>
+
+                    <p class="section-header__description">
+                        I design software and embedded solutions with a focus on reliability, maintainability and
+                        engineering best practices.
+
+                    </p>
+
+                </header>
+
+                <div class="about__content">
+
+                    <figure class="about__profile">
+
+                        <img class="about__image" src="./src/assets/images/profile/profile.jpg" alt="Gabriel Henao">
+
+                    </figure>
+
+                    <div class="about__details">
+
+                        <article class="about__item">
+
+                            <h3 class="about__item-title">
+                                Engineering Mindset
+
+                            </h3>
+
+                            <p class="about__item-description">
+                                I approach every project through analysis, planning and structured development, creating
+                                solutions that are scalable and easy to maintain.
+
+                            </p>
+
+                        </article>
+
+                        <article class="about__item">
+
+                            <h3 class="about__item-title">
+                                Electronics & Software
+
+                            </h3>
+
+                            <p class="about__item-description">
+                                My experience combines embedded systems, electronics and software development to build
+                                reliable solutions across multiple engineering domains.
+
+                            </p>
+
+                        </article>
+
+                        <article class="about__item">
+
+                            <h3 class="about__item-title">
+                                Quality & Maintainability
+
+                            </h3>
+
+                            <p class="about__item-description">
+                                Clean architecture, modular code and clear documentation are fundamental principles in
+                                every project I develop.
+
+                            </p>
+
+                        </article>
+
+                    </div>
+
+                </div>
+
+            </div>
 
         </section>
 
-        <section id="projects">
+        <!-- ==========================================================
+            PROJECTS
+        =========================================================== -->
+
+        <section class="projects" id="projects">
+
+            <div class="container">
+
+                <header class="section-header">
+
+                    <span class="section-header__label">
+                        Projects
+
+                    </span>
+
+                    <h2 class="section-header__title">
+                        Engineering work in action
+
+                    </h2>
+
+                    <p class="section-header__description">
+                        Selected projects that demonstrate problem solving and technical execution.
+
+                    </p>
+
+                </header>
+
+                <div class="projects__grid">
+
+                    <article class="project-card">
+
+                        <div class="project-card__image-wrapper">
+
+                            <img class="project-card__image" src="./src/assets/images/projects/vive-chec.jpg"
+                                alt="Vive Chec project">
+
+                        </div>
+
+                        <div class="project-card__body">
+
+                            <h3 class="project-card__title">
+                                Viva Chec
+
+                            </h3>
+
+                            <p class="project-card__description">
+                                Micro Museo desarrollado para el Centro de experiencias VIVE CHEC. Se realiza con el
+                                propósito de ofrecer una experiencia educativa e interactiva para los visitantes, que
+                                invita a reflexionar sobre la oportunidad de encontrar un equilibrio entre el uso y la
+                                conservación de los recursos naturales.
+
+                                Se observan efectos de iluminación en el diorama y se presionan los pulsadores para
+                                reproducir los audios correspondientes.
+
+                            </p>
+
+                            <footer class="project-card__footer">
+
+                                <span class="project-card__year">
+                                    2026
+
+                                </span>
+
+                                <div class="project-card__technologies">
+                                    <!-- icons -->
+
+                                </div>
+
+                            </footer>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
 
         </section>
 
-        <section id="skills">
+        <!-- ==========================================================
+            SKILLS
+        =========================================================== -->
+
+        <section class="skills" id="skills">
+
+            <div class="container">
+
+            </div>
 
         </section>
 
-        <section id="contact">
+        <!-- ==========================================================
+            CONTACT
+        =========================================================== -->
+
+        <section class="contact" id="contact">
+
+            <div class="container">
+
+            </div>
 
         </section>
 
     </main>
 
-    <footer>
+    <!-- ==========================================================================
+        FOOTER
+    =========================================================================== -->
+
+    <footer class="footer">
 
     </footer>
 

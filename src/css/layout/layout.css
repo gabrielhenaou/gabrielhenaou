@@ -1,7 +1,5 @@
-.container {
-    width: min(var(--container-width), 100%);
-    margin-inline: auto;
-    padding-inline: var(--container-padding);
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -20,6 +18,8 @@ section {
     width: 100%;
 }
 
-html {
-    scroll-behavior: smooth;
+.container {
+    width: min(var(--container-width), 100%);
+    margin-inline: auto;
+    padding-inline: var(--container-padding);
 }
