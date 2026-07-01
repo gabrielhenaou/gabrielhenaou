@@ -1,0 +1,81 @@
+/* ==========================================================================
+   Header
+========================================================================== */
+
+.header {
+    position: fixed;
+    inset: 0 0 auto 0;
+    z-index: 1000;
+}
+
+/* ==========================================================================
+   Navbar
+========================================================================== */
+
+.navbar {
+    height: 5rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 5rem;
+
+    background-color: rgba(13, 17, 23, 0.72);
+    backdrop-filter: blur(12px);
+}
+
+/* ==========================================================================
+   Brand
+========================================================================== */
+
+.navbar__brand {
+    color: var(--color-text);
+
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+
+    text-decoration: none;
+    letter-spacing: 0.04em;
+
+    transition: color var(--transition);
+}
+
+.navbar__brand:hover {
+    color: var(--color-primary);
+}
+
+/* ==========================================================================
+   Menu
+========================================================================== */
+
+.navbar__menu {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+
+    list-style: none;
+}
+
+.navbar__item {
+    display: flex;
+}
+
+/* ==========================================================================
+   Links
+========================================================================== */
+
+.navbar__link {
+    color: var(--color-text-muted);
+
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+
+    text-decoration: none;
+
+    transition: color var(--transition);
+}
+
+.navbar__link:hover {
+    color: var(--color-text);
+}
