@@ -1,0 +1,30 @@
+/* ==========================================================================
+   Contact
+========================================================================== */
+
+.contact {
+    padding-block: var(--section-spacing);
+}
+
+/* ==========================================================================
+   Content
+========================================================================== */
+
+.contact__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: var(--spacing-xl);
+
+    max-width: 720px;
+    margin-inline: auto;
+
+    text-align: center;
+}
+
+.contact__description {
+    color: var(--color-text-muted);
+
+    line-height: var(--line-height-relaxed);
+}

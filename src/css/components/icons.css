@@ -2,7 +2,7 @@
    Technology Icons
 ========================================================================== */
 
-.technology-icons {
+.icons {
     display: flex;
     flex-wrap: wrap;
 }
@@ -11,39 +11,45 @@
    Size Modifiers
 ========================================================================== */
 
-.technology-icons--size-small {
+.icons--size-small {
     gap: var(--spacing-xs);
 }
 
-.technology-icons--size-large {
+.icons--size-medium {
     gap: var(--spacing-sm);
+}
+
+.icons--size-large {
+    gap: var(--spacing-md);
 }
 
 /* ==========================================================================
    Alignment Modifiers
 ========================================================================== */
 
-.technology-icons--align-start {
+.icons--align-start {
     justify-content: flex-start;
 }
 
-.technology-icons--align-center {
+.icons--align-center {
     justify-content: center;
 }
 
 /* ==========================================================================
-   Technology Icon
+   Icon
 ========================================================================== */
 
-.technology-icon {
+.icon {
     position: relative;
 
     display: flex;
     align-items: center;
     justify-content: center;
+
+    cursor: pointer;
 }
 
-.technology-icon__image {
+.icon__image {
     display: block;
 
     width: 100%;
@@ -52,7 +58,6 @@
     object-fit: contain;
 
     opacity: var(--opacity-muted);
-    cursor: pointer;
 
     transition:
         opacity var(--transition-fast),
@@ -63,12 +68,17 @@
    Size
 ========================================================================== */
 
-.technology-icons--size-small .technology-icon {
+.icons--size-small .icon {
     width: var(--icon-size-sm);
     height: var(--icon-size-sm);
 }
 
-.technology-icons--size-large .technology-icon {
+.icons--size-medium .icon {
+    width: var(--icon-size-md);
+    height: var(--icon-size-md);
+}
+
+.icons--size-large .icon {
     width: var(--icon-size-lg);
     height: var(--icon-size-lg);
 }
@@ -77,7 +87,7 @@
    Tooltip
 ========================================================================== */
 
-.technology-icon__tooltip {
+.icon__tooltip {
     position: absolute;
 
     bottom: calc(100% + var(--spacing-xs));
@@ -111,12 +121,12 @@
    States
 ========================================================================== */
 
-.technology-icon:hover .technology-icon__image {
+.icon:hover .icon__image {
     opacity: var(--opacity-visible);
     transform: scale(var(--image-zoom));
 }
 
-.technology-icon:hover .technology-icon__tooltip {
+.icon:hover .icon__tooltip {
     opacity: var(--opacity-visible);
     visibility: visible;
 

@@ -19,8 +19,8 @@
 ========================================================================== */
 
 @import url("./components/button.css");
+@import url("./components/icons.css");
 @import url("./components/section-header.css");
-@import url("./components/technology-icons.css");
 @import url("./components/project-card.css");
 @import url("./components/skill-card.css");
 

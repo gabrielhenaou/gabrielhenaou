@@ -110,3 +110,10 @@ PCB design, schematic capture and electronic prototyping.
 Software Development
 
 Tools and technologies for building maintainable software.
+
+Fíjate que seguimos exactamente el mismo patrón de:
+
+section
+└── container
+    ├── section-header
+    └── content
