@@ -46,6 +46,11 @@
 .technology-icon__image {
     display: block;
 
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
     opacity: var(--opacity-muted);
     cursor: pointer;
 
@@ -58,12 +63,12 @@
    Size
 ========================================================================== */
 
-.technology-icons--size-small .technology-icon__image {
+.technology-icons--size-small .technology-icon {
     width: var(--icon-size-sm);
     height: var(--icon-size-sm);
 }
 
-.technology-icons--size-large .technology-icon__image {
+.technology-icons--size-large .technology-icon {
     width: var(--icon-size-lg);
     height: var(--icon-size-lg);
 }

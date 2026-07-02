@@ -11,7 +11,7 @@
    Layout
 ========================================================================== */
 @import url("./layout/navbar.css");
-@import url("./layout/layout.css");
+@import url("./layout/container.css");
 @import url("./layout/footer.css");
 
 /* ==========================================================================
@@ -22,6 +22,7 @@
 @import url("./components/section-header.css");
 @import url("./components/technology-icons.css");
 @import url("./components/project-card.css");
+@import url("./components/skill-card.css");
 
 /* ==========================================================================
    Sections

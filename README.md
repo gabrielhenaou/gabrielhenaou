@@ -98,3 +98,15 @@ ada componente tiene una única responsabilidad y cada sección organiza compone
 5. Footer
 6. Estados (hover)
 7. Responsive
+
+Embedded Systems
+
+Firmware development, RTOS integration and microcontroller programming.
+
+Electronics
+
+PCB design, schematic capture and electronic prototyping.
+
+Software Development
+
+Tools and technologies for building maintainable software.
