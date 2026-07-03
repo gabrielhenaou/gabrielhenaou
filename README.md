@@ -117,3 +117,22 @@ section
 └── container
     ├── section-header
     └── content
+
+
+1. reset.css
+2. fonts.css
+3. layout.css
+4. navbar.css
+5. button.css
+6. section-header.css
+7. icons.css
+8. project-card.css
+9. skill-card.css
+10. hero.css
+11. pcb.css
+12. about.css
+13. projects.css
+14. skills.css
+15. contact.css
+16. footer.css
+17. style.css

@@ -1,22 +1,44 @@
+/* ==========================================================================
+   Hero
+========================================================================== */
+
 .hero {
-    min-height: 100vh;
-    display: flex;
+    display: flex;    
     align-items: center;
+
+    min-height: 100vh;
 }
+
+/* ==========================================================================
+   Layout
+========================================================================== */
 
 .hero__content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    gap: var(--spacing-lg);
+
+    gap: var(--spacing-2xl);
 }
 
 .hero__info {
-    min-width: 0;
     display: flex;
     flex-direction: column;
+
+    min-width: 0;
+        
     gap: var(--spacing-sm);
 }
+
+.hero__visual {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ==========================================================================
+   Typography
+========================================================================== */
 
 .hero__greeting {
     font-size: var(--font-size-md);
@@ -37,32 +59,38 @@
 }
 
 .hero__description {
-    max-width: 38rem;
+    max-width: 60ch;
+
+    color: var(--color-text-muted);
+
     font-size: var(--font-size-md);
     line-height: var(--line-height-relaxed);
 }
 
+/* ==========================================================================
+   Actions
+========================================================================== */
+
 .hero__actions {
     display: flex;
     flex-wrap: wrap;
-    gap: var(--spacing-sm);
-    margin-top: var(--spacing-md);
-}
 
-.hero__visual {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    gap: var(--spacing-sm);
+
+    margin-top: var(--spacing-sm);
 }
 
 .pcb-scene {
     width: 100%;
     max-width: 520px;
+
     aspect-ratio: 1 / 1;
 }
 
 @media (max-width: 992px) {
+
     .hero__content {
         grid-template-columns: 1fr;
     }
+    
 }

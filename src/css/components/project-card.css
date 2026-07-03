@@ -8,6 +8,10 @@
 
     overflow: hidden;
 
+    gap: var(--spacing-xs);
+
+    
+
     background: var(--color-surface);
 
     border: var(--border-width-thin) solid var(--color-border);
@@ -16,7 +20,6 @@
     transition:
         transform var(--transition-fast),
         border-color var(--transition-fast),
-        box-shadow var(--transition-fast);
 }
 
 .project-card:hover {
@@ -29,8 +32,6 @@
 ========================================================================== */
 
 .project-card__image {
-    display: block;
-
     width: 100%;
     aspect-ratio: 1 / 1;
 
@@ -47,7 +48,7 @@
    Content
 ========================================================================== */
 
-.project-card__content {
+.project-card__body {
     display: flex;
     flex: 1;
     flex-direction: column;
@@ -57,7 +58,7 @@
 }
 
 /* ==========================================================================
-   Typography
+   Title
 ========================================================================== */
 
 .project-card__title {
@@ -66,10 +67,15 @@
     line-height: var(--line-height-tight);
 }
 
+/* ==========================================================================
+   Description
+========================================================================== */
+
 .project-card__description {
     flex: 1;
 
     max-height: 5rem;
+
     overflow-y: auto;
 
     color: var(--color-text-muted);
@@ -78,11 +84,15 @@
     line-height: var(--line-height-base);
 }
 
+.project-card__description:hover {
+    overflow-y: auto;
+}
+
 /* ==========================================================================
-   Footer
+   Meta
 ========================================================================== */
 
-.project-card__meta {
+.project-card__footer {
     display: flex;
     justify-content: space-between;
     align-items: center;

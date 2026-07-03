@@ -13,13 +13,11 @@
 ========================================================================== */
 
 .navbar {
-    height: 5rem;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    height: 5rem;
+    height: var(--navbar-height);
 
     background-color: rgba(13, 17, 23, 0.72);
     backdrop-filter: blur(12px);
@@ -35,10 +33,9 @@
     font-size: var(--font-size-lg);
     font-weight: var(--font-weight-semibold);
 
-    text-decoration: none;
     letter-spacing: 0.04em;
 
-    transition: color var(--transition);
+    transition: color var(--transition-fast);
 }
 
 .navbar__brand:hover {
@@ -52,7 +49,8 @@
 .navbar__menu {
     display: flex;
     align-items: center;
-    gap: 2.5rem;
+
+    gap: var(--spacing-lg);
 
     list-style: none;
 }
@@ -71,9 +69,7 @@
     font-size: var(--font-size-sm);
     font-weight: var(--font-weight-medium);
 
-    text-decoration: none;
-
-    transition: color var(--transition);
+    transition: color var(--transition-fast);
 }
 
 .navbar__link:hover {
@@ -94,7 +90,10 @@
 
 .header.is-scrolled {
 
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    border-bottom: 
+        var(--border-width-thin)
+        solid
+        var(--color-border);
 
 }
 

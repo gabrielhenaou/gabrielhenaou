@@ -1,17 +1,27 @@
+/* ==========================================================================
+   Button
+========================================================================== */
+
 .button {
     display: inline-flex;
     justify-content: center;
     align-items: center;
 
     width: fit-content;
-    padding: 0.875rem 1.75rem;
 
-    border: 1px solid transparent;
+    padding:
+        var(--spacing-xs)
+        var(--spacing-lg);
+
+    border:
+        var(--border-width-thin)
+        solid
+        transparent;
+
     border-radius: var(--radius-md);
 
-    font-family: inherit;
-    font-size: var(--font-size-sm);
-    font-weight: var(--font-weight-medium);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-regular);
     line-height: var(--line-height-base);
 
     text-decoration: none;
@@ -19,11 +29,15 @@
     cursor: pointer;
 
     transition:
-        background-color var(--transition),
-        color var(--transition),
-        border-color var(--transition),
-        transform var(--transition);
+        background-color var(--transition-fast),
+        color var(--transition-fast),
+        border-color var(--transition-fast),
+        transform var(--transition-fast);
 }
+
+/* ==========================================================================
+   Variants
+========================================================================== */
 
 .button--primary {
     color: var(--color-background);
@@ -36,8 +50,12 @@
     border-color: var(--color-primary);
 }
 
+/* ==========================================================================
+   States
+========================================================================== */
+
 .button:hover {
-    transform: translateY(-2px);
+    transform: translateY(var(--hover-lift));
 }
 
 .button--primary:hover {
@@ -47,4 +65,13 @@
 .button--secondary:hover {
     color: var(--color-background);
     background-color: var(--color-primary);
+}
+
+.button:focus-visible {
+    outline: var(--border-width-medium) solid var(--color-primary);
+    outline-offset: 4px;
+}
+
+.button:active {
+    transform: translateY(0);
 }

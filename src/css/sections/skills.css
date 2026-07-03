@@ -3,12 +3,17 @@
 ========================================================================== */
 
 .skills {
-    padding: var(--spacing-3xl) 0;
+    padding-block: var(--section-spacing);
 }
+
+/* ==========================================================================
+   Grid
+========================================================================== */
 
 .skills__grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    
     gap: var(--spacing-lg);
 }
 
@@ -17,7 +22,9 @@
 ========================================================================== */
 
 @media (max-width: 900px) {
+
     .skills__grid {
         grid-template-columns: 1fr;
     }
+
 }

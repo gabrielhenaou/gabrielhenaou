@@ -1,49 +1,79 @@
+/* ==========================================================================
+   About
+========================================================================== */
+
 .about {
-    padding: 6rem 0;
+    padding-block: var(--section-spacing);
 }
+
+/* ==========================================================================
+   Layout
+========================================================================== */
 
 .about__content {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 4rem;
+
+    gap: var(--spacing-2xl);
 }
 
 .about__profile {
-    flex: 1;
     display: flex;
     justify-content: center;
-}
 
-.about__image {
-    width: 240px;
-    height: 240px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid var(--color-accent);
+    flex: 1;
 }
 
 .about__details {
-    flex: 2;
     display: flex;
+    flex: 2;
     flex-direction: column;
-    gap: 2rem;
+
+    gap: var(--spacing-lg);
 }
 
+/* ==========================================================================
+   Image
+========================================================================== */
+
+.about__image {
+    width: 15rem;
+    aspect-ratio: 1 / 1;
+
+    object-fit: cover;
+
+    border: var(--border-width-medium) solid var(--color-primary);
+    border-radius: var(--radius-full);
+}
+
+/* ==========================================================================
+   Typography
+========================================================================== */
+
 .about__item-title {
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
+    margin-bottom: var(--spacing-xs);
+
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-semibold);
+    line-height: var(--line-height-tight);
+    
 }
 
 .about__item-description {
-    opacity: 0.8;
-    line-height: 1.6;
+    color: var(--color-text-muted);
+
+    line-height: var(--line-height-base);
 }
+
+/* ==========================================================================
+   Responsive
+========================================================================== */
 
 @media (max-width: 768px) {
     .about__content {
         flex-direction: column;
+
         text-align: center;
     }
 
@@ -53,6 +83,5 @@
 
     .about__image {
         width: 180px;
-        height: 180px;
     }
 }
