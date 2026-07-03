@@ -3,15 +3,15 @@
 ========================================================================== */
 
 .project-card {
+    flex: 0 0 calc((100% - (2 * var(--spacing-lg))) / 3);
+
     display: flex;
     flex-direction: column;
 
     overflow: hidden;
 
     gap: var(--spacing-xs);
-
     
-
     background: var(--color-surface);
 
     border: var(--border-width-thin) solid var(--color-border);
@@ -77,7 +77,7 @@
 .project-card__description {
     flex: 1;
 
-    max-height: 10rem;
+    max-height: 7rem;
 
     overflow-y: auto;
 
