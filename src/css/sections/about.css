@@ -38,12 +38,12 @@
 ========================================================================== */
 
 .about__image {
-    width: 15rem;
+    width: 10rem;
     aspect-ratio: 1 / 1;
 
     object-fit: cover;
 
-    border: var(--border-width-medium) solid var(--color-primary);
+    border: var(--border-width-medium) solid var(--color-border);
     border-radius: var(--radius-full);
 }
 

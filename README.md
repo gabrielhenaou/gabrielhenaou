@@ -136,3 +136,19 @@ section
 15. contact.css
 16. footer.css
 17. style.css
+
+
+about [Concepto]
+
+1. Contexto
+¿Por qué es importante este concepto?
+
+↓
+
+2. Método
+¿Cómo lo aplico en mis proyectos?
+
+↓
+
+3. Impacto
+¿Qué aporta al resultado final?
