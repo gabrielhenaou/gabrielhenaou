@@ -20,9 +20,12 @@
 
 .about__profile {
     display: flex;
-    justify-content: center;
-
     flex: 1;
+    flex-direction: column;
+    align-items: center;
+
+    gap: var(--spacing-lg);
+
 }
 
 .about__details {
@@ -45,6 +48,33 @@
 
     border: var(--border-width-medium) solid var(--color-border);
     border-radius: var(--radius-full);
+}
+
+/* ==========================================================================
+   Profile
+========================================================================== */
+
+.about__roles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: var(--spacing-xs);
+}
+
+.about__role {
+    color: var(--color-text-muted);
+
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+
+    line-height: var(--line-height-tight);
+}
+
+.about__role--primary {
+    color: var(--color-text);
+
+    font-weight: var(--font-weight-semibold);
 }
 
 /* ==========================================================================
