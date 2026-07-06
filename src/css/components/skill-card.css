@@ -70,23 +70,23 @@
 ========================================================================== */
 
 .skill-card__icon--technologies-1 {
-    top: var(--spacing-sm);
-    left: var(--spacing-md);
+    top: 5%;
+    left: 20%;
 }
 
 .skill-card__icon--technologies-2 {
-    top: var(--spacing-xl);
-    right: var(--spacing-lg);
+    top: 30%;
+    right: 30%;
 }
 
 .skill-card__icon--technologies-3 {
-    bottom: var(--spacing-lg);
-    left: var(--spacing-xl);
+    bottom: 25%;
+    left: 15%;
 }
 
 .skill-card__icon--technologies-4 {
-    bottom: var(--spacing-sm);
-    right: var(--spacing-md);
+    bottom: 10%;
+    right: 10%;
 }
 
 /* ==========================================================================
@@ -94,38 +94,38 @@
 ========================================================================== */
 
 .skill-card__icon--tools-1 {
-    top: var(--spacing-sm);
-    left: var(--spacing-md);
+    top: 5%;
+    left: 10%;
 }
 
 .skill-card__icon--tools-2 {
-    top: var(--spacing-md);
-    left: 50%;
+    top: 30%;
+    left: 35%;
 }
 
 .skill-card__icon--tools-3 {
-    top: var(--spacing-lg);
-    right: var(--spacing-md);
+    top: 10%;
+    right: 20%;
 }
 
 .skill-card__icon--tools-4 {
     top: 50%;
-    left: var(--spacing-sm);
+    left: 10%;
 }
 
 .skill-card__icon--tools-5 {
-    top: 50%;
-    left: 50%;
+    bottom: 10%;
+    left: 60%;
 }
 
 .skill-card__icon--tools-6 {
-    top: 50%;
-    right: var(--spacing-sm);
+    top: 45%;
+    right: 10%;
 }
 
 .skill-card__icon--tools-7 {
-    bottom: var(--spacing-lg);
-    left: var(--spacing-lg);
+    bottom: 5%;
+    left: 20%;
 }
 
 /* ==========================================================================
@@ -133,26 +133,26 @@
 ========================================================================== */
 
 .skill-card__icon--other-tools-1 {
-    top: var(--spacing-lg);
-    left: var(--spacing-lg);
+    top: 5%;
+    left: 10%;
 }
 
 .skill-card__icon--other-tools-2 {
-    top: 50%;
-    right: var(--spacing-xl);
+    top: 20%;
+    right: 20%;
 }
 
 .skill-card__icon--other-tools-3 {
-    bottom: var(--spacing-lg);
-    left: 50%;
+    bottom: 40%;
+    left: 20%;
 }
 
-.skill-card__icon--other-tools-8 {
-    bottom: var(--spacing-md);
-    left: 50%;
+.skill-card__icon--other-tools-4 {
+    bottom: 10%;
+    left: 30%;
 }
 
-.skill-card__icon--other-tools-9 {
-    bottom: var(--spacing-sm);
-    right: var(--spacing-lg);
+.skill-card__icon--other-tools-5 {
+    bottom: 20%;
+    right: 10%;
 }
