@@ -75,18 +75,28 @@
 }
 
 .skill-card__icon--technologies-2 {
-    top: 30%;
-    right: 30%;
+    top: 15%;
+    right: 10%;
 }
 
 .skill-card__icon--technologies-3 {
-    bottom: 25%;
-    left: 15%;
+    top: 35%;
+    left: 30%;
 }
 
 .skill-card__icon--technologies-4 {
-    bottom: 10%;
+    top: 60%;
+    left: 10%;
+}
+
+.skill-card__icon--technologies-5 {
+    bottom: 25%;
     right: 10%;
+}
+
+.skill-card__icon--technologies-6 {
+    bottom: 10%;
+    right: 40%;
 }
 
 /* ==========================================================================
@@ -99,60 +109,51 @@
 }
 
 .skill-card__icon--tools-2 {
-    top: 30%;
+    top: 15%;
     left: 35%;
 }
 
 .skill-card__icon--tools-3 {
     top: 10%;
-    right: 20%;
+    right: 10%;
 }
 
 .skill-card__icon--tools-4 {
-    top: 50%;
-    left: 10%;
+    top: 40%;
+    left: 20%;
 }
 
 .skill-card__icon--tools-5 {
-    bottom: 10%;
-    left: 60%;
+    bottom: 40%;
+    left: 40%;
 }
 
 .skill-card__icon--tools-6 {
-    top: 45%;
-    right: 10%;
+    top: 25%;
+    right: 35%;
 }
 
 .skill-card__icon--tools-7 {
     bottom: 5%;
-    left: 20%;
-}
-
-/* ==========================================================================
-   Other tools
-========================================================================== */
-
-.skill-card__icon--other-tools-1 {
-    top: 5%;
-    left: 10%;
-}
-
-.skill-card__icon--other-tools-2 {
-    top: 20%;
-    right: 20%;
-}
-
-.skill-card__icon--other-tools-3 {
-    bottom: 40%;
-    left: 20%;
-}
-
-.skill-card__icon--other-tools-4 {
-    bottom: 10%;
-    left: 30%;
-}
-
-.skill-card__icon--other-tools-5 {
-    bottom: 20%;
     right: 10%;
+}
+
+.skill-card__icon--tools-8 {
+    bottom: 15%;
+    left: 5%;
+}
+
+.skill-card__icon--tools-9 {
+    bottom: 10%;
+    right: 30%;
+}
+
+.skill-card__icon--tools-10 {
+    top: 45%;
+    right: 10%;
+}
+
+.skill-card__icon--tools-11 {
+    bottom: 5%;
+    left: 30%;
 }
