@@ -152,3 +152,14 @@ about [Concepto]
 
 3. Impacto
 ¿Qué aporta al resultado final?
+
+✔ HTML
+✔ CSS
+✔ main.js
+✔ navigation.js
+⬜ projects.js
+⬜ animations.js (PCB interactivo)
+⬜ Optimización responsive
+⬜ Accesibilidad
+⬜ README
+⬜ Despliegue en GitHub Pages

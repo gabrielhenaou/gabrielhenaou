@@ -5,7 +5,10 @@
 .header {
     position: fixed;
     inset: 0 0 auto 0;
+
     z-index: 1000;
+
+    transition: border-color var(--transition-fast);
 }
 
 /* ==========================================================================
@@ -13,14 +16,21 @@
 ========================================================================== */
 
 .navbar {
+    position: relative;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     height: var(--navbar-height);
 
-    background-color: rgba(13, 17, 23, 0.72);
+    background-color: var(--navbar-background);
+
     backdrop-filter: blur(12px);
+
+    transition:
+        background-color var(--transition-fast),
+        backdrop-filter var(--transition-fast);
 }
 
 /* ==========================================================================
@@ -76,11 +86,8 @@
     color: var(--color-text);
 }
 
-/* ==========================================================================
-   Active State
-========================================================================== */
-
-.is-active {
+.navbar__link--active,
+.navbar__link--active:hover {
     color: var(--color-primary);
 }
 

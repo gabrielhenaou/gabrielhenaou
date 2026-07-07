@@ -1,3 +1,9 @@
+import { initializeNavigation } from "./navigation.js";
+
+/* ==========================================================================
+   HTML Loader
+========================================================================== */
+
 async function loadHtml(selector, file) {
 
     try {
@@ -20,11 +26,19 @@ async function loadHtml(selector, file) {
 
 }
 
-document.addEventListener("DOMContentLoaded", () => {
+/* ==========================================================================
+   Initialization
+========================================================================== */
 
-    loadHtml(
+document.addEventListener("DOMContentLoaded", initializeApplication);
+
+async function initializeApplication() {
+
+    await loadHtml(
         "#hero-visual",
         "src/html/hero-visual.html"
     );
 
-});
+    initializeNavigation();
+
+}

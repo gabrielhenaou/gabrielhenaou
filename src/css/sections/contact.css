@@ -18,7 +18,7 @@
     max-width: 45rem;
     margin-inline: auto;
 
-    gap: var(--spacing-xl);
+    gap: var(--spacing-lg);
 
     text-align: center;
 }

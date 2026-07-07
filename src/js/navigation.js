@@ -2,85 +2,19 @@
    Navigation
 ========================================================================== */
 
-function initializeNavigation() {
+export function initializeNavigation() {
 
+    initializeHeaderScroll();
+    initializeActiveSection();
     initializeSmoothScroll();
-    initializeActiveLink();
-    initializeNavbarScroll();
-
-}
-
-document.addEventListener("DOMContentLoaded", initializeNavigation);
-
-/* ==========================================================================
-   Smooth Scroll
-========================================================================== */
-
-function initializeSmoothScroll() {
 
 }
 
 /* ==========================================================================
-   Active Link
+   Header Scroll
 ========================================================================== */
 
-function initializeActiveLink() {
-
-    const sections = document.querySelectorAll("main section");
-    const links = document.querySelectorAll("[data-section]");
-
-    const navigationMap = new Map();
-
-    links.forEach((link) => {
-
-        navigationMap.set(
-            link.dataset.section,
-            link
-        );
-
-    });
-
-    const observer = new IntersectionObserver(
-
-        (entries) => {
-
-            entries.forEach((entry) => {
-
-                if (!entry.isIntersecting) {
-                    return;
-                }
-
-                if (activeLink) {
-                    activeLink.classList.remove("is-active");
-                }
-
-                activeLink = navigationMap.get(
-                    entry.target.id
-                );
-
-                if (activeLink) {
-                    activeLink.classList.remove("is-active");
-                }
-
-            });
-
-        },
-
-        {
-            threshold: 0.5
-        }
-
-    );
-
-    sections.forEach((section) => observer.observe(section));
-
-}
-
-/* ==========================================================================
-   Navbar Scroll
-========================================================================== */
-
-function initializeNavbarScroll() {
+function initializeHeaderScroll() {
 
     const header = document.querySelector(".header");
 
@@ -88,25 +22,131 @@ function initializeNavbarScroll() {
         return;
     }
 
-    const SCROLL_THRESHOLD = 20;
+    updateHeaderState(header);
 
-    let isScrolled = false;
+    window.addEventListener(
+        "scroll",
+        () => updateHeaderState(header)
+    );
 
-    window.addEventListener("scroll", () => {
+}
 
-        const shouldScroll = window.scrollY > SCROLL_THRESHOLD;
+/* ==========================================================================
+   Header State
+========================================================================== */
 
-        if (shouldScroll === isScrolled) {
+function updateHeaderState(header) {
+
+    header.classList.toggle(
+        "is-scrolled",
+        window.scrollY > 10
+    );
+
+}
+
+/* ==========================================================================
+   Active Section
+========================================================================== */
+
+function initializeActiveSection() {
+
+    const sections = document.querySelectorAll("main section");
+
+    if (!sections.length) {
+        return;
+    }
+
+    const observer = new IntersectionObserver(
+        handleSectionIntersection,
+        {
+            root: null,
+            rootMargin: "-35% 0px -45% 0px",
+            threshold: 0
+        }
+    );
+
+    sections.forEach(section => {
+
+        observer.observe(section);
+
+    });
+
+}
+
+/* ==========================================================================
+   Section Observer
+========================================================================== */
+
+function handleSectionIntersection(entries) {
+
+    entries.forEach(entry => {
+
+        if (!entry.isIntersecting) {
             return;
         }
 
-        isScrolled = shouldScroll;
+        setActiveNavigationLink(entry.target.id);
 
-        header.classList.toggle(
-            "is-scrolled",
-            isScrolled
+    });
+
+}
+
+/* ==========================================================================
+   Active Link
+========================================================================== */
+
+function setActiveNavigationLink(sectionId) {
+
+    const navigationLinks = document.querySelectorAll(".navbar__link");
+
+    navigationLinks.forEach(link => {
+
+        link.classList.toggle(
+            "navbar__link--active",
+            link.dataset.section === sectionId
         );
 
+    });
+
+}
+
+/* ==========================================================================
+   Smooth Scroll
+========================================================================== */
+
+function initializeSmoothScroll() {
+
+    const navigationLinks = document.querySelectorAll(".navbar__link");
+
+    navigationLinks.forEach(link => {
+
+        link.addEventListener(
+            "click",
+            handleNavigationClick
+        );
+
+    });
+
+}
+
+/* ==========================================================================
+   Navigation Click
+========================================================================== */
+
+function handleNavigationClick(event) {
+
+    event.preventDefault();
+
+    const targetSelector = event.currentTarget.getAttribute("href");
+    const targetSection = document.querySelector(targetSelector);
+
+    if (!targetSection) {
+        return;
+    }
+
+    targetSection.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
     });
 
 }
