@@ -163,3 +163,13 @@ about [Concepto]
 ⬜ Accesibilidad
 ⬜ README
 ⬜ Despliegue en GitHub Pages
+
+Ese orden mantiene exactamente la metodología que hemos seguido durante todo el desarrollo del portafolio: estructura → estilos → comportamiento.
+
+
+Primero el bloque del micro.
+Luego las pistas izquierdas.
+Luego las derechas.
+Luego las superiores.
+Luego las inferiores.
+Finalmente validamos el conjunto y pasamos a la animación.

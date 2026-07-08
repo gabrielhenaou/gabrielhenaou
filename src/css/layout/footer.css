@@ -7,29 +7,6 @@
 }
 
 /* ==========================================================================
-   Top
-========================================================================== */
-
-.footer__top {
-    margin-bottom: var(--spacing-md);
-
-    text-align: center;
-}
-
-.footer__brand {
-    font-size: var(--font-size-lg);
-    font-weight: var(--font-weight-semibold);
-    line-height: var(--line-height-tight);
-}
-
-.footer__tagline {
-    margin-top: var(--spacing-xs);
-
-    color: var(--color-text-muted);
-    line-height: var(--line-height-base);
-}
-
-/* ==========================================================================
    Divider
 ========================================================================== */
 

@@ -17,7 +17,7 @@
 
     transition:
         transform var(--transition-fast),
-        border-color var(--transition-fast),
+        border-color var(--transition-fast);
 }
 
 .skill-card:hover {
@@ -25,7 +25,7 @@
 
     border-color: var(--color-border-active);
 
-    box-shadow: 0 0 10px rgba(79, 209, 255, 0.06);
+    box-shadow: --shadow-card-hover;
 }
 
 /* ==========================================================================

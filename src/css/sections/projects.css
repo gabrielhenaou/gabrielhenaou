@@ -20,7 +20,10 @@
 
 .projects__track {
     display: flex;
+
     gap: var(--spacing-lg);
+
+    transition: transform var(--transition-base);
 }
 
 /* ==========================================================================
@@ -32,18 +35,19 @@
 }
 
 /* ==========================================================================
-   Pagination
+   Indicators
 ========================================================================== */
 
-.projects__pagination {
+.projects__indicators {
     display: flex;
     justify-content: center;
+
     gap: var(--spacing-sm);
 
     margin-top: var(--spacing-xl);
 }
 
-.projects__dot {
+.projects__indicator {
     width: 0.625rem;
     aspect-ratio: 1;
 
@@ -59,11 +63,11 @@
         transform var(--transition-fast);
 }
 
-.projects__dot:hover {
+.projects__indicator:hover {
     background: var(--color-border-active);
 }
 
-.projects__dot--active {
+.projects__indicator--active {
     background: var(--color-primary);
 }
 

@@ -41,7 +41,7 @@
 ========================================================================== */
 
 .about__image {
-    width: 10rem;
+    width: 12rem;
     aspect-ratio: 1 / 1;
 
     object-fit: cover;

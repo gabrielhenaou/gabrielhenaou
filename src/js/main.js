@@ -1,4 +1,5 @@
 import { initializeNavigation } from "./navigation.js";
+import { initializeProjects } from "./projects.js";
 
 /* ==========================================================================
    HTML Loader
@@ -40,5 +41,6 @@ async function initializeApplication() {
     );
 
     initializeNavigation();
+    initializeProjects();
 
 }
