@@ -49,23 +49,31 @@
 
             <path id="fanout-t1"
                 class="fanout__track"
-                d="M422 388 L422 350"/>
+                d="M422 388 L422 370"/>
 
             <path id="fanout-t2"
                 class="fanout__track"
-                d="M447 388 L447 350"/>
+                d="M447 388 L447 370"/>
+
+            <path id="fanout-t3"
+                class="fanout__track"
+                d="M472 388 L472 370"/>
 
             <path id="fanout-t4"
                 class="fanout__track"
-                d="M497 388 L497 350"/>
+                d="M497 388 L497 370"/>
+
+            <path id="fanout-t5"
+                class="fanout__track"
+                d="M522 388 L522 370"/>
 
             <path id="fanout-t6"
                 class="fanout__track"
-                d="M547 388 L547 350"/>
+                d="M547 388 L547 370"/>
 
             <path id="fanout-t7"
                 class="fanout__track"
-                d="M572 388 L572 350"/>
+                d="M572 388 L572 370"/>
 
             <!-- ==========================================================================
                 RIGHT 
@@ -73,47 +81,63 @@
 
             <path id="fanout-r1"
                 class="fanout__track"
-                d="M612 422 L650 422"/>
+                d="M612 422 L630 422"/>
 
             <path id="fanout-r2"
                 class="fanout__track"
-                d="M612 447 L650 447"/>
+                d="M612 447 L630 447"/>
 
             <path id="fanout-r3"
                 class="fanout__track"
-                d="M612 472 L650 472"/>
+                d="M612 472 L630 472"/>
+
+            <path id="fanout-r4"
+                class="fanout__track"
+                d="M612 497 L630 497"/>
 
             <path id="fanout-r5"
                 class="fanout__track"
-                d="M612 522 L650 522"/>
+                d="M612 522 L630 522"/>
 
             <path id="fanout-r6"
                 class="fanout__track"
-                d="M612 547 L650 547"/>
+                d="M612 547 L630 547"/>
 
             <path id="fanout-r7"
                 class="fanout__track"
-                d="M612 572 L650 572"/>
+                d="M612 572 L630 572"/>
 
             <!-- ==========================================================================
                 BOTTOM 
             ========================================================================== -->
 
+            <path id="fanout-b1"
+                class="fanout__track"
+                d="M422 612 L422 630"/>
+
             <path id="fanout-b2"
                 class="fanout__track"
-                d="M447 612 L447 650"/>
+                d="M447 612 L447 630"/>
 
             <path id="fanout-b3"
                 class="fanout__track"
-                d="M472 612 L472 650"/>
+                d="M472 612 L472 630"/>
+
+            <path id="fanout-b4"
+                class="fanout__track"
+                d="M497 612 L497 630"/>
 
             <path id="fanout-b5"
                 class="fanout__track"
-                d="M522 612 L522 650"/>
+                d="M522 612 L522 630"/>
 
             <path id="fanout-b6"
                 class="fanout__track"
-                d="M547 612 L547 650"/>
+                d="M547 612 L547 630"/>
+
+            <path id="fanout-b7"
+                class="fanout__track"
+                d="M572 612 L572 630"/>
 
             <!-- ==========================================================================
                 LEFT 
@@ -121,23 +145,31 @@
 
             <path id="fanout-l1"
                 class="fanout__track"
-                d="M388 422 L350 422"/>
+                d="M388 422 L370 422"/>
 
             <path id="fanout-l2"
                 class="fanout__track"
-                d="M388 447 L350 447"/>
+                d="M388 447 L370 447"/>
+
+            <path id="fanout-l3"
+                class="fanout__track"
+                d="M388 472 L370 472"/>
 
             <path id="fanout-l4"
                 class="fanout__track"
-                d="M388 497 L350 497"/>
+                d="M388 497 L370 497"/>
+
+            <path id="fanout-l5"
+                class="fanout__track"
+                d="M388 522 L370 522"/>
 
             <path id="fanout-l6"
                 class="fanout__track"
-                d="M388 547 L350 547"/>
+                d="M388 547 L370 547"/>
 
             <path id="fanout-l7"
                 class="fanout__track"
-                d="M388 572 L350 572"/>
+                d="M388 572 L370 572"/>
 
         </g>
 
@@ -155,17 +187,25 @@
                 <path
                     class="track__copper"
                     d="
-                        M422 358
-                        L422 300
-                        L388 266
-                        L320 266
-                        L250 196
+                        M422 370
+                        L422 320
+                        L362 260
+                        L362 180
+                    "/>
+
+                <path
+                    class="track__signal"
+                    d="
+                        M422 370
+                        L422 320
+                        L362 260
+                        L362 180
                     "/>
 
                 <circle
                     class="track__terminal"
-                    cx="250"
-                    cy="196"
+                    cx="362"
+                    cy="180"
                     r="6"/>
 
             </g>
@@ -174,15 +214,56 @@
 
                 <path
                     class="track__copper"
-                    d="M447 350
-                    L447 250
-                    L360 163"/>
+                    d="
+                        M447 370
+                        L447 310
+                        L387 250
+                        L387 135
+                    "/>
+
+                <path
+                    class="track__signal"
+                    d="
+                        M447 370
+                        L447 310
+                        L387 250
+                        L387 135
+                    "/>
 
                 <circle
                     class="track__terminal"
-                    cx="360"
-                    cy="163"
+                    cx="387"
+                    cy="135"
                     r="6"/>
+
+            </g>
+
+            <g id="track-t3" class="track">
+
+                <path
+                    class="track__copper"
+                    d="
+                        M472 370
+                        L472 280
+                        L460 268
+                        L460 220
+                    "/>
+
+                <path
+                    class="track__signal"
+                    d="
+                        M472 370
+                        L472 280
+                        L460 268
+                        L460 220
+                    "/>
+
+                <circle
+                    class="track__terminal"
+                    cx="460"
+                    cy="220"
+                    r="6"/>
+
             </g>
 
             <g id="track-t4" class="track">
@@ -190,16 +271,53 @@
                 <path
                     class="track__copper"
                     d="
-                        M497 350
-                        L497 235
-                        L535 197
-                        L535 145
+                        M497 370
+                        L497 255
+                        L515 237
+                        L515 105
+                    "/>
+
+                <path
+                    class="track__signal"
+                    d="
+                        M497 370
+                        L497 255
+                        L515 237
+                        L515 105
                     "/>
 
                 <circle
                     class="track__terminal"
-                    cx="535"
-                    cy="145"
+                    cx="515"
+                    cy="105"
+                    r="6"/>
+
+            </g>
+
+            <g id="track-t5" class="track">
+
+                <path
+                    class="track__copper"
+                    d="
+                        M522 370
+                        L522 280
+                        L540 258
+                        L540 165
+                    "/>
+
+                <path
+                    class="track__signal"
+                    d="
+                        M522 370
+                        L522 280
+                        L540 258
+                        L540 165
+                    "/>
+
+                <circle
+                    class="track__terminal"
+                    cx="540"
+                    cy="165"
                     r="6"/>
 
             </g>
@@ -209,17 +327,23 @@
                 <path
                     class="track__copper"
                     d="
-                        M547 352
-                        L547 280
-                        L645 182
+                        M547 370
+                        L547 290
+                    "/>
+
+                <path
+                    class="track__sigmal"
+                    d="
+                        M547 370
+                        L547 290
                     "/>
 
                 <circle
                     class="track__terminal"
-                    cx="645"
-                    cy="182"
+                    cx="547"
+                    cy="290"
                     r="6"/>
-            
+
             </g>
 
             <g id="track-t7" class="track">
@@ -227,17 +351,31 @@
                 <path
                     class="track__copper"
                     d="
-                        M572 360
-                        L572 305
-                        L640 237
+                        M572 370
+                        L572 300
+                        L600 272
+                        L600 220
+                        L572 195
+                        L572 100
+                    "/>
+
+                <path
+                    class="track__signal"
+                    d="
+                        M572 370
+                        L572 300
+                        L600 272
+                        L600 220
+                        L572 195
+                        L572 100
                     "/>
 
                 <circle
                     class="track__terminal"
-                    cx="640"
-                    cy="237"
+                    cx="572"
+                    cy="100"
                     r="6"/>
-            
+
             </g>
 
             <!-- ==========================================================================
@@ -249,19 +387,27 @@
                 <path
                     class="track__copper"
                     d="
-                        M650 422
-                        L720 422
-                        L770 372
-                        L770 185
-                        L865 90
+                        M630 422
+                        L690 422
+                        L750 362
+                        L830 362
+                    "/>
+
+                <path
+                    class="track__signal"
+                    d="
+                        M630 422
+                        L690 422
+                        L750 362
+                        L830 362
                     "/>
 
                 <circle
                     class="track__terminal"
-                    cx="865"
-                    cy="90"
+                    cx="830"
+                    cy="362"
                     r="6"/>
-            
+
             </g>
 
             <g id="track-r2" class="track">
@@ -269,17 +415,27 @@
                 <path
                     class="track__copper"
                     d="
-                        M648 447
-                        L720 447
-                        L805 362
+                        M630 447
+                        L700 447
+                        L760 387
+                        L850 387
+                    "/>
+
+                <path
+                    class="track__signal"
+                    d="
+                        M630 447
+                        L700 447
+                        L760 387
+                        L850 387
                     "/>
 
                 <circle
                     class="track__terminal"
-                    cx="805"
-                    cy="362"
+                    cx="850"
+                    cy="387"
                     r="6"/>
-            
+
             </g>
 
             <g id="track-r3" class="track">
@@ -287,19 +443,51 @@
                 <path
                     class="track__copper"
                     d="
-                        M650 472
-                        L745 472
-                        L790 517
-                        L790 655
-                        L885 750
+                        M630 472
+                        L730 472
+                    "/>
+
+                <path
+                    class="track__signal"
+                    d="
+                        M630 472
+                        L730 472
                     "/>
 
                 <circle
                     class="track__terminal"
-                    cx="885"
-                    cy="750"
+                    cx="730"
+                    cy="472"
                     r="6"/>
-            
+
+            </g>
+
+            <g id="track-r4" class="track">
+
+                <path
+                    class="track__copper"
+                    d="
+                        M630 497
+                        L705 497
+                        L733 525
+                        L790 525
+                    "/>
+
+                <path
+                    class="track__signal"
+                    d="
+                        M630 497
+                        L705 497
+                        L733 525
+                        L790 525
+                    "/>
+
+                <circle
+                    class="track__terminal"
+                    cx="790"
+                    cy="525"
+                    r="6"/>
+
             </g>
 
             <g id="track-r5" class="track">
@@ -307,19 +495,27 @@
                 <path
                     class="track__copper"
                     d="
-                        M650 522
-                        L760 522
-                        L820 582
-                        L820 705
-                        L900 785
+                        M630 522
+                        L690 522
+                        L750 582
+                        L830 582
+                    "/>
+
+                <path
+                    class="track__signal"
+                    d="
+                        M630 522
+                        L690 522
+                        L750 582
+                        L830 582
                     "/>
 
                 <circle
                     class="track__terminal"
-                    cx="900"
-                    cy="785"
+                    cx="830"
+                    cy="582"
                     r="6"/>
-            
+
             </g>
 
             <g id="track-r6" class="track">
@@ -327,36 +523,53 @@
                 <path
                     class="track__copper"
                     d="
-                        M650 547
-                        L730 547
-                        L770 507
-                        L770 315
-                        L840 245
+                        M630 547
+                        L670 547
+                    "/>
+
+                <path
+                    class="track__signal"
+                    d="
+                        M630 547
+                        L670 547
                     "/>
 
                 <circle
                     class="track__terminal"
-                    cx="840"
-                    cy="245"
+                    cx="670"
+                    cy="547"
                     r="6"/>
 
             </g>
 
             <g id="track-r7" class="track">
+
                 <path
                     class="track__copper"
                     d="
-                        M650 572
-                        L715 572
-                        L755 612
-                        L755 840
-                        L675 920
+                        M630 572
+                        L690 572
+                        L718 600
+                        L718 660
+                        L748 690
+                        L840 690
+                    "/>
+
+                <path
+                    class="track__signal"
+                    d="
+                        M630 572
+                        L690 572
+                        L718 600
+                        L718 660
+                        L748 690
+                        L840 690
                     "/>
 
                 <circle
                     class="track__terminal"
-                    cx="675"
-                    cy="920"
+                    cx="840"
+                    cy="690"
                     r="6"/>
 
             </g>
@@ -365,20 +578,58 @@
                 BOTTON
             ========================================================================== -->
 
+            <g id="track-b1" class="track">
+
+                <path
+                    class="track__copper"
+                    d="
+                        M422 630
+                        L422 690
+                        L362 750
+                        L362 830
+                    "/>
+
+                <path
+                    class="track__signal"
+                    d="
+                        M422 630
+                        L422 690
+                        L362 750
+                        L362 830
+                    "/>
+
+                <circle
+                    class="track__terminal"
+                    cx="362"
+                    cy="830"
+                    r="6"/>
+
+            </g>
+
             <g id="track-b2" class="track">
 
                 <path
                     class="track__copper"
                     d="
-                        M447 650
-                        L447 730
-                        L365 812
+                        M447 630
+                        L447 700
+                        L387 760
+                        L387 850
+                    "/>
+
+                <path
+                    class="track__signal"
+                    d="
+                        M447 630
+                        L447 700
+                        L387 760
+                        L387 850
                     "/>
 
                 <circle
                     class="track__terminal"
-                    cx="365"
-                    cy="812"
+                    cx="387"
+                    cy="850"
                     r="6"/>
 
             </g>
@@ -388,15 +639,49 @@
                 <path
                     class="track__copper"
                     d="
-                        M472 650
-                        L472 735
-                        L390 817
+                        M472 630
+                        L472 730
+                    "/>
+
+                <path
+                    class="track__signal"
+                    d="
+                        M472 630
+                        L472 730
                     "/>
 
                 <circle
                     class="track__terminal"
-                    cx="390"
-                    cy="817"
+                    cx="472"
+                    cy="730"
+                    r="6"/>
+
+            </g>
+
+            <g id="track-b4" class="track">
+
+                <path
+                    class="track__copper"
+                    d="
+                        M497 630
+                        L497 705
+                        L515 723
+                        L515 790
+                    "/>
+
+                <path
+                    class="track__signal"
+                    d="
+                        M497 630
+                        L497 705
+                        L515 723
+                        L515 790
+                    "/>
+
+                <circle
+                    class="track__terminal"
+                    cx="515"
+                    cy="790"
                     r="6"/>
 
             </g>
@@ -406,15 +691,25 @@
                 <path
                     class="track__copper"
                     d="
-                        M522 650
-                        L522 735
-                        L605 818
+                        M522 630
+                        L522 700
+                        L540 718
+                        L540 760
+                    "/>
+
+                <path
+                    class="track__signal"
+                    d="
+                        M522 630
+                        L522 700
+                        L540 718
+                        L540 760
                     "/>
 
                 <circle
                     class="track__terminal"
-                    cx="605"
-                    cy="818"
+                    cx="540"
+                    cy="760"
                     r="6"/>
 
             </g>
@@ -424,17 +719,57 @@
                 <path
                     class="track__copper"
                     d="
-                        M547 650
-                        L547 730
-                        L590 773
-                        L590 865
-                        L670 945
+                        M547 630
+                        L547 690
+                        L575 718
+                        L575 780
+                        L547 808
+                        L547 900
+                    "/>
+
+                <path
+                    class="track__signal"
+                    d="
+                        M547 630
+                        L547 690
+                        L575 718
+                        L575 780
+                        L547 808
+                        L547 900
                     "/>
 
                 <circle
                     class="track__terminal"
-                    cx="670"
-                    cy="945"
+                    cx="547"
+                    cy="900"
+                    r="6"/>
+
+            </g>
+
+            <g id="track-b7" class="track">
+
+                <path
+                    class="track__copper"
+                    d="
+                        M572 630
+                        L572 680
+                        L632 740
+                        L632 840
+                    "/>
+
+                <path
+                    class="track__signal"
+                    d="
+                        M572 630
+                        L572 680
+                        L632 740
+                        L632 840
+                    "/>
+
+                <circle
+                    class="track__terminal"
+                    cx="632"
+                    cy="840"
                     r="6"/>
 
             </g>
@@ -448,35 +783,81 @@
                 <path
                     class="track__copper"
                     d="
-                        M350 422
-                        L275 422
-                        L220 367
-                        L220 180
-                        L125 85
+                        M370 422
+                        L325 422
+                        L305 402
+                        L235 402
+                    "/>
+
+                <path
+                    class="track__signal"
+                    d="
+                        M370 422
+                        L325 422
+                        L305 402
+                        L235 402
                     "/>
 
                 <circle
                     class="track__terminal"
-                    cx="125"
-                    cy="85"
+                    cx="235"
+                    cy="402"
                     r="6"/>
 
             </g>
 
             <g id="track-l2" class="track">
-            
+
                 <path
                     class="track__copper"
                     d="
-                        M350 447
-                        L270 447
-                        L165 342
+                        M370 447
+                        L300 447
+                        L280 427
+                        L70 427
+                    "/>
+
+                <path
+                    class="track__signal"
+                    d="
+                        M370 447
+                        L300 447
+                        L280 427
+                        L70 427
+                    "/>
+
+                <circle
+                    class="track__terminal"
+                    cx="70"
+                    cy="427"
+                    r="6"/>
+
+            </g>
+
+            <g id="track-l3" class="track">
+
+                <path
+                    class="track__copper"
+                    d="
+                        M370 472
+                        L280 472
+                        L260 452
+                        L165 452
+                    "/>
+
+                <path
+                    class="track__signal"
+                    d="
+                        M370 472
+                        L280 472
+                        L260 452
+                        L165 452
                     "/>
 
                 <circle
                     class="track__terminal"
                     cx="165"
-                    cy="342"
+                    cy="452"
                     r="6"/>
 
             </g>
@@ -486,17 +867,61 @@
                 <path
                     class="track__copper"
                     d="
-                        M350 497
-                        L265 497
-                        L215 447
-                        L215 315
-                        L135 235
+                        M370 497
+                        L260 497
+                        L233 470
+                        L200 470
+                        L173 497
+                        L20 497
+                    "/>
+
+                <path
+                    class="track__signal"
+                    d="
+                        M370 497
+                        L260 497
+                        L233 470
+                        L200 470
+                        L173 497
+                        L20 497
                     "/>
 
                 <circle
                     class="track__terminal"
-                    cx="135"
-                    cy="235"
+                    cx="20"
+                    cy="497"
+                    r="6"/>
+
+            </g>
+
+            <g id="track-l5" class="track">
+
+                <path
+                    class="track__copper"
+                    d="
+                        M370 522
+                        L295 522
+                        L277 540
+                        L240 540
+                        L222 522
+                        L130 522
+                    "/>
+
+                <path
+                    class="track__signal"
+                    d="
+                        M370 522
+                        L295 522
+                        L277 540
+                        L240 540
+                        L222 522
+                        L130 522
+                    "/>
+
+                <circle
+                    class="track__terminal"
+                    cx="130"
+                    cy="522"
                     r="6"/>
 
             </g>
@@ -506,17 +931,25 @@
                 <path
                     class="track__copper"
                     d="
-                        M350 547
-                        L285 547
-                        L250 582
-                        L250 710
-                        L175 785
+                        M370 547
+                        L315 547
+                        L295 567
+                        L220 567
+                    "/>
+
+                <path
+                    class="track__signal"
+                    d="
+                        M370 547
+                        L315 547
+                        L295 567
+                        L220 567
                     "/>
 
                 <circle
                     class="track__terminal"
-                    cx="175"
-                    cy="785"
+                    cx="220"
+                    cy="567"
                     r="6"/>
 
             </g>
@@ -526,22 +959,36 @@
                 <path
                     class="track__copper"
                     d="
-                        M350 572
-                        L260 572
-                        L205 627
-                        L205 845
-                        L115 935
+                        M370 572
+                        L340 572
+                        L300 602
+                        L205 602
+                        L165 562
+                        L100 562
+                        L90 552
+                        L10 552
+                    "/>
+
+                <path
+                    class="track__signal"
+                    d="
+                        M370 572
+                        L340 572
+                        L300 602
+                        L205 602
+                        L165 562
+                        L100 562
+                        L90 552
+                        L10 552
                     "/>
 
                 <circle
                     class="track__terminal"
-                    cx="115"
-                    cy="935"
+                    cx="10"
+                    cy="552"
                     r="6"/>
 
             </g>
-
-        </g>
 
         <!-- ==========================================================================
             TERMINALS

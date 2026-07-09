@@ -173,3 +173,8 @@ Luego las derechas.
 Luego las superiores.
 Luego las inferiores.
 Finalmente validamos el conjunto y pasamos a la animación.
+
+
+Línea 1 (vertical): ≈ 55 px
+Línea 2 (45°): ≈ 18–20 px
+Línea 3 (vertical): ≈ 120 px

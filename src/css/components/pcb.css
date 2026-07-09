@@ -52,3 +52,18 @@
 .track__terminal {
     fill: var(--color-primary);
 }
+
+/* ==========================================================================
+   Signal
+========================================================================== */
+
+.track__signal {
+    fill: none;
+
+    stroke: #FFFFFF;
+    stroke-width: 4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+
+    opacity: 0;
+}
