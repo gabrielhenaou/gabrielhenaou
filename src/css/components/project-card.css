@@ -82,6 +82,8 @@
     flex-direction: column;
     justify-content: flex-end;
 
+    gap: var(--spacing-sm);
+
     height: 100%;
 }
 

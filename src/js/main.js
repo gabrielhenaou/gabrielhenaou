@@ -1,4 +1,5 @@
 import { initializeNavigation } from "./navigation.js";
+import { initializePcb } from "./animations.js";
 import { initializeProjects } from "./projects.js";
 
 /* ==========================================================================
@@ -41,6 +42,7 @@ async function initializeApplication() {
     );
 
     initializeNavigation();
+    initializePcb();
     initializeProjects();
 
 }

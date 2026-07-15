@@ -60,10 +60,21 @@
 .track__signal {
     fill: none;
 
-    stroke: #FFFFFF;
+    stroke: #A8F8FF;
     stroke-width: 4;
     stroke-linecap: round;
     stroke-linejoin: round;
 
-    opacity: 0;
+    pointer-events: none;
+
+    opacity: 1;
+}
+
+.track__hitbox {
+    fill: none;
+
+    stroke: transparent;
+    stroke-width: 20;
+
+    cursor: pointer;
 }
