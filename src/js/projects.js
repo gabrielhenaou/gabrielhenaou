@@ -1,4 +1,10 @@
 /* ==========================================================================
+   Imports
+========================================================================== */
+
+import { openProjectModal } from "./project-modal.js";
+
+/* ==========================================================================
    Projects
 ========================================================================== */
 
@@ -25,10 +31,48 @@ export function initializeProjects() {
 
     synchronizeCarousel();
 
+    initializeProjectCards();
+
     window.addEventListener(
         "resize",
         handleResize
     );
+
+}
+
+/* ==========================================================================
+   Project Cards
+========================================================================== */
+
+function initializeProjectCards() {
+
+    const buttons = document.querySelectorAll(".project-card__details");
+
+    console.log("Buttons:", buttons);
+
+    buttons.forEach((button) => {
+
+        button.addEventListener("click", (event) => {
+
+            event.preventDefault();
+
+            console.log("Click detected");
+
+            const card = button.closest(".project-card");
+
+            if (!card) {
+                return;
+            }
+
+            const projectId = card.dataset.project;
+
+            console.log("Project ID:", projectId);
+
+            openProjectModal(projectId);
+
+        });
+
+    });
 
 }
 
@@ -104,8 +148,10 @@ function updateTrack() {
     const cardWidth = cards[0].offsetWidth;
 
     const gap = parseFloat(
+
         getComputedStyle(track).columnGap ||
         getComputedStyle(track).gap
+
     );
 
     const offset =

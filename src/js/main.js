@@ -1,6 +1,7 @@
 import { initializeNavigation } from "./navigation.js";
 import { initializePcb } from "./animations.js";
 import { initializeProjects } from "./projects.js";
+import { initializeProjectModal } from "./project-modal.js";
 
 /* ==========================================================================
    HTML Loader
@@ -43,6 +44,8 @@ async function initializeApplication() {
 
     initializeNavigation();
     initializePcb();
+    initializeProjectModal();
     initializeProjects();
+    
 
 }
