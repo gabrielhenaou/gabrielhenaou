@@ -29,7 +29,7 @@ export const projects = [
         title: "PCB SEC",
 
         description: 
-            `Como parte de mi trabajo en Parque Explora, participé en el diseño de una tarjeta electrónica destinada al sistema de iluminación de una experiencia interactiva. La solución fue desarrollada para controlar diferentes elementos de iluminación, generar efectos lumínicos programables e integrar sensores de proximidad encargados de activar las distintas secuencias del montaje.
+            `Como parte de mi trabajo en Parque Explora, diseñé una tarjeta electrónica destinada al sistema de iluminación de una experiencia interactiva. La solución fue desarrollada para controlar diferentes elementos de iluminación, generar efectos lumínicos programables e integrar sensores de proximidad encargados de activar las distintas secuencias del montaje.
 
             El diseño incorpora dos salidas de potencia para el accionamiento de relés destinados al control de iluminación de 110 VAC, implementando etapas de conmutación mediante transistores para proteger las salidas del microcontrolador. Adicionalmente, integra seis canales para el control de LED y tiras NeoPixel, permitiendo generar secuencias y efectos luminosos programables en distintos segmentos de la experiencia.
 
@@ -58,7 +58,7 @@ export const projects = [
         title: "Temporada de huracanes",
 
         description: 
-            `Desarrollé una experiencia interactiva para la maestra de artes visuales María Fernanda Calderón, presentada en la exposición "Anticipaciones. Entre l_s mism_s no será". El proyecto integra una instalación audiovisual interactiva que explora la relación entre el uso, la veracidad y los vacíos presentes en la información a través de la interacción del público.
+            `Desarrollé una instalación audiovisual interactiva para la exposición "Anticipaciones. Entre l_s mism_s no será", de la maestra de artes visuales María Fernanda Calderón. El sistema fue diseñado para sincronizar la reproducción de contenidos audiovisuales en respuesta a la interacción del público, formando parte de una obra que explora la relación entre el uso, la veracidad y los vacíos presentes en la información.
 
             El sistema está compuesto por una botonera de diez pulsadores, donde cada interacción es procesada por una Raspberry Pi 4 encargada de la lógica principal del sistema. A través del protocolo de comunicación I²C, este dispositivo sincroniza una segunda Raspberry Pi 4, permitiendo la reproducción simultánea de dos contenidos audiovisuales complementarios ejecutados mediante scripts desarrollados en Python.
 
@@ -90,7 +90,49 @@ export const projects = [
 
             La instalación está compuesta por dos subsistemas independientes. El primero integra cuatro reproductores de audio desarrollados sobre Arduino, cada uno equipado con un decodificador VS1053B y dos pulsadores que permiten navegar de forma secuencial entre diferentes listas de reproducción. Cada módulo opera de manera independiente, permitiendo que varios visitantes interactúen simultáneamente sin interferencias entre los distintos reproductores.
 
-            El segundo subsistema está dedicado a la reproducción continua de contenido audiovisual mediante un reproductor configurado para ejecutar un video en bucle, sincronizando la proyección con el resto de los elementos de la experiencia.`
+            El segundo subsistema está dedicado a la reproducción continua de contenido audiovisual mediante un reproductor multimedia configurado para ejecutar un video en bucle. Además de la configuración del equipo, se realizó la integración con el sistema de proyección para garantizar el funcionamiento continuo de la instalación y el correcto encuadre del contenido sobre la superficie de proyección.`
+            
+    },
+
+    {
+        id: "todas-las-vidas-del-agua",
+
+        title: "Todas las vidas del agua",
+
+        description: 
+            `Como parte de mi trabajo en Parque Explora, desarrollé una experiencia interactiva para PepsiCo destinada a explicar el funcionamiento de una Planta de Tratamiento de Aguas Residuales (PTAR) mediante una instalación basada en video mapping e interacción en tiempo real. La experiencia proyecta contenido audiovisual sobre ilustraciones representativas de los diferentes procesos de la planta, permitiendo al visitante explorar su funcionamiento de manera intuitiva.
+
+            El sistema fue desarrollado utilizando TouchDesigner como plataforma principal para la gestión de la reproducción audiovisual. La instalación permite ejecutar de forma independiente las animaciones correspondientes a cada proceso de la PTAR, manteniendo la posibilidad de reproducir simultáneamente múltiples secuencias sobre diferentes zonas del montaje, sincronizadas con un sistema de sonido envolvente 5.1.
+
+            La interacción del usuario se realiza mediante diez sensores capacitivos ocultos detrás del muro, creando la sensación de que la proyección responde directamente al contacto sobre los puntos interactivos. Los sensores operan a 12 VDC y fueron acondicionados mediante optoacopladores para aislar las entradas del sistema de control basado en un Arduino Leonardo. Aprovechando la interfaz USB HID del microcontrolador, cada activación es enviada al computador como un evento de teclado, permitiendo que TouchDesigner gestione el disparo de las animaciones y su sincronización con el contenido sonoro.`
+            
+    },
+
+    {
+        id: "telefono-interactivo",
+
+        title: "Teléfono interactivo",
+
+        description: 
+            `Desarrollé una experiencia interactiva para el Centro de Memoria del Holocausto del Palacio de Justicia y del Derecho a la Vida, utilizando un teléfono de disco antiguo como interfaz principal para la reproducción de testimonios relacionados con la toma y retoma del Palacio de Justicia.
+
+            El desarrollo consistió en reemplazar completamente la electrónica original del teléfono, conservando su apariencia y mecanismos de interacción. El sistema incorpora un microcontrolador Atmega 328P, un reproductor de audio basado en VS1053B, un sensor de presencia PIR y un sistema de accionamiento PWM encargado de activar el mecanismo electromecánico de la campana. Cuando se detecta la presencia de un visitante, el teléfono comienza a sonar, invitando a responder la llamada.
+
+            Una vez el auricular es descolgado, el sistema reproduce una locución que solicita marcar uno de los diez números disponibles en el disco telefónico. La marcación es interpretada mediante la lectura de los pulsos generados por el disco, permitiendo conservar la experiencia de uso característica de este tipo de dispositivos. Cada número activa un testimonio diferente y, al finalizar su reproducción, el sistema retorna automáticamente al locución principal. Si durante la reproducción el visitante marca un nuevo número, el audio en curso se interrumpe para dar paso inmediatamente al nuevo testimonio.`
+            
+    },
+
+    {
+        id: "cielo-magico",
+
+        title: "Cielo mágico",
+
+        description: 
+            `Desarrollé una experiencia inmersiva para Enigma Escape Room, recreando el cielo del universo de Harry Potter mediante la sincronización de efectos de iluminación y sonido. La instalación alterna entre un ambiente de atardecer y una tormenta nocturna.
+
+            El sistema fue desarrollado con una placa de desarrollo ESP32-WROOM-32 e integra diez canales PWM destinados al control independiente de los diferentes circuitos de iluminación. Mediante el firmware se implementaron secuencias dinámicas que generan transiciones suaves de color durante el atardecer y patrones variables de destellos para simular relámpagos durante la tormenta.
+
+            La reproducción de audio se realiza mediante un módulo reproductor de audio DY-SV5W, sincronizado con los efectos de iluminación. Adicionalmente, el sistema emplea relés para conmutar la distribución de la señal estéreo entre diferentes altavoces, generando una percepción espacial del sonido que simula el desplazamiento de los truenos alrededor de los participantes. La coordinación entre iluminación, audio y conmutación de salidas permitió construir una escena completamente inmersiva.`
             
     }
 

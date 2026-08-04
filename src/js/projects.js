@@ -14,6 +14,7 @@ const MOBILE_BREAKPOINT = 600;
 let currentIndex = 0;
 
 let track = null;
+let cards = null;
 let indicators = null;
 
 /* ==========================================================================
@@ -28,6 +29,8 @@ export function initializeProjects() {
     if (!track || !indicators) {
         return;
     }
+
+    cards = track.querySelectorAll(".project-card");
 
     synchronizeCarousel();
 
@@ -48,15 +51,11 @@ function initializeProjectCards() {
 
     const buttons = document.querySelectorAll(".project-card__details");
 
-    console.log("Buttons:", buttons);
-
     buttons.forEach((button) => {
 
         button.addEventListener("click", (event) => {
 
             event.preventDefault();
-
-            console.log("Click detected");
 
             const card = button.closest(".project-card");
 
@@ -65,8 +64,6 @@ function initializeProjectCards() {
             }
 
             const projectId = card.dataset.project;
-
-            console.log("Project ID:", projectId);
 
             openProjectModal(projectId);
 
@@ -99,8 +96,6 @@ function getVisibleCards() {
 ========================================================================== */
 
 function createIndicators() {
-
-    const cards = track.querySelectorAll(".project-card");
 
     const visibleCards = getVisibleCards();
 
@@ -137,8 +132,6 @@ function createIndicators() {
 
 function updateTrack() {
 
-    const cards = track.querySelectorAll(".project-card");
-
     if (!cards.length) {
         return;
     }
@@ -147,11 +140,11 @@ function updateTrack() {
 
     const cardWidth = cards[0].offsetWidth;
 
+    const styles = getComputedStyle(track);
+
     const gap = parseFloat(
-
-        getComputedStyle(track).columnGap ||
-        getComputedStyle(track).gap
-
+        styles.columnGap ||
+        styles.gap
     );
 
     const offset =
@@ -215,8 +208,6 @@ function goToPosition(index) {
 ========================================================================== */
 
 function handleResize() {
-
-    const cards = track.querySelectorAll(".project-card");
 
     const visibleCards = getVisibleCards();
 

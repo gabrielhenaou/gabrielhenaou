@@ -1,11 +1,10 @@
 /* ==========================================================================
-   Skill Card
+Skill Card
 ========================================================================== */
 
 .skill-card {
     display: flex;
     flex-direction: column;
-    
     gap: var(--spacing-lg);
 
     padding: var(--spacing-md);
@@ -17,7 +16,8 @@
 
     transition:
         transform var(--transition-fast),
-        border-color var(--transition-fast);
+        border-color var(--transition-fast),
+        box-shadow var(--transition-fast);
 }
 
 .skill-card:hover {
@@ -25,11 +25,11 @@
 
     border-color: var(--color-border-active);
 
-    box-shadow: --shadow-card-hover;
+    box-shadow: var(--shadow-card-hover);
 }
 
 /* ==========================================================================
-   Title
+Title
 ========================================================================== */
 
 .skill-card__title {
@@ -41,119 +41,52 @@
 }
 
 /* ==========================================================================
-   Icons
+Skills
 ========================================================================== */
 
-.skill-card__icons {
-    position: relative;
-    flex: 1;
-
-    min-height: 20rem;
-}
-
-.skill-card__icon {
-    position: absolute;
-
+.skill-card__skills {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 
-    transition: transform var(--transition-fast);
-}
-
-.skill-card__icon:hover {
-    transform: scale(1.1);
+    gap: var(--spacing-xs);
 }
 
 /* ==========================================================================
-   Technologies
+Skill
 ========================================================================== */
 
-.skill-card__icon--technologies-1 {
-    top: 5%;
-    left: 20%;
+.skill-card__skill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0.5rem 0.875rem;
+
+    color: var(--color-text);
+
+    background: var(--color-surface);
+
+    border: var(--border-width-thin) solid var(--color-border);
+    border-radius: var(--radius-sm);
+
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    line-height: var(--line-height-tight);
+
+    white-space: nowrap;
+
+    transition:
+        color var(--transition-fast),
+        border-color var(--transition-fast),
+        background-color var(--transition-fast);
 }
 
-.skill-card__icon--technologies-2 {
-    top: 15%;
-    right: 10%;
-}
+.skill-card__skill:hover {
+    color: var(--color-primary);
 
-.skill-card__icon--technologies-3 {
-    top: 35%;
-    left: 30%;
-}
+    border-color: var(--color-border-active);
 
-.skill-card__icon--technologies-4 {
-    top: 60%;
-    left: 10%;
-}
-
-.skill-card__icon--technologies-5 {
-    bottom: 25%;
-    right: 10%;
-}
-
-.skill-card__icon--technologies-6 {
-    bottom: 10%;
-    right: 40%;
-}
-
-/* ==========================================================================
-   Tools
-========================================================================== */
-
-.skill-card__icon--tools-1 {
-    top: 5%;
-    left: 10%;
-}
-
-.skill-card__icon--tools-2 {
-    top: 15%;
-    left: 35%;
-}
-
-.skill-card__icon--tools-3 {
-    top: 10%;
-    right: 10%;
-}
-
-.skill-card__icon--tools-4 {
-    top: 40%;
-    left: 20%;
-}
-
-.skill-card__icon--tools-5 {
-    bottom: 40%;
-    left: 40%;
-}
-
-.skill-card__icon--tools-6 {
-    top: 25%;
-    right: 35%;
-}
-
-.skill-card__icon--tools-7 {
-    bottom: 5%;
-    right: 10%;
-}
-
-.skill-card__icon--tools-8 {
-    bottom: 15%;
-    left: 5%;
-}
-
-.skill-card__icon--tools-9 {
-    bottom: 10%;
-    right: 30%;
-}
-
-.skill-card__icon--tools-10 {
-    top: 45%;
-    right: 10%;
-}
-
-.skill-card__icon--tools-11 {
-    bottom: 5%;
-    left: 30%;
+    background-color: rgba(79, 209, 255, 0.04);
 }

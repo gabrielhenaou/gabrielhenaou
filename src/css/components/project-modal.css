@@ -20,7 +20,7 @@
         opacity var(--transition-base),
         visibility var(--transition-base);
 
-    z-index: 1000;
+    z-index: var(--z-index-modal);
 }
 
 /* ==========================================================================
@@ -59,8 +59,7 @@
 
     transform: scale(0.98);
 
-    transition:
-        transform var(--transition-base);
+    transition: transform var(--transition-base);
 }
 
 /* ==========================================================================
@@ -132,6 +131,31 @@
     padding: var(--modal-padding);
 
     overflow-y: auto;
+
+    scrollbar-width: thin;
+    scrollbar-color:
+        var(--color-border)
+        transparent;
+}
+
+.project-modal__body::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+.project-modal__body::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.project-modal__body::-webkit-scrollbar-thumb {
+    border-radius: var(--radius-full);
+
+    background: var(--color-border);
+
+    transition: background var(--transition-fast);
+}
+
+.project-modal__body::-webkit-scrollbar-thumb:hover {
+    background: var(--color-border-active);
 }
 
 /* ==========================================================================

@@ -11,6 +11,7 @@ import { projects } from "./project-data.js";
 let modal;
 let title;
 let description;
+let body;
 
 /* ==========================================================================
    Initialization
@@ -26,13 +27,20 @@ export function initializeProjectModal() {
 
     title = modal.querySelector(".project-modal__title");
     description = modal.querySelector(".project-modal__description");
+    body = modal.querySelector(".project-modal__body");
 
     const backdrop = modal.querySelector(".project-modal__backdrop");
     const closeButton = modal.querySelector(".project-modal__close");
 
-    backdrop.addEventListener("click", closeProjectModal);
+    backdrop.addEventListener(
+        "click",
+        closeProjectModal
+    );
 
-    closeButton.addEventListener("click", closeProjectModal);
+    closeButton.addEventListener(
+        "click",
+        closeProjectModal
+    );
 
     document.addEventListener("keydown", (event) => {
 
@@ -50,28 +58,19 @@ export function initializeProjectModal() {
 
 export function openProjectModal(projectId) {
 
-    console.log("openProjectModal:", projectId);
-
     const project = projects.find(
         (item) => item.id === projectId
     );
-
-    console.log("Project:", project);
-    console.log("Modal:", modal);
-    console.log("Title:", title);
-    console.log("Description:", description);
 
     if (!project) {
         return;
     }
 
     title.textContent = project.title;
-
     description.textContent = project.description;
+    body.scrollTop = 0;
 
     modal.classList.add("project-modal--open");
-
-    console.log("Classes:", modal.className);
 
     document.body.style.overflow = "hidden";
 
@@ -82,6 +81,10 @@ export function openProjectModal(projectId) {
 ========================================================================== */
 
 export function closeProjectModal() {
+
+    if (!modal) {
+        return;
+    }
 
     modal.classList.remove("project-modal--open");
 
